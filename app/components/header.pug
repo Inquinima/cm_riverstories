@@ -1,0 +1,55 @@
+doctype html
+<html lang="ru" class="scroll-smooth overflow-x-hidden bg-black">
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/tailwind.css")
+        title Смешной тайтл
+        meta(name="description", content="Дескрипшн")
+        meta(property="og:title" content="Тайтл")
+        meta(property="og:image" content="Desktop-1200.png")
+    <body class="tracking-normal body">
+        header.header.font-bold
+                .header__top.border-b.border-rs-gray
+                    .header__top-inner.pl-mob-20.flex.flex-row.justify-between(class="sm:px-fs-40")
+                        .logo.py-mob-15(class="sm:border-r sm:border-rs-gray pr-fs-15 sm:pl-fs-15 sm:py-fs-23 sm:pr-fs-33")
+                            img.lozad.w-mob-171.h-mob-28(class="sm:h-fs-36 sm:w-fs-219" src="/assets/img/logo.svg" data-src="/assets/img/logo.svg" alt="Логотип RiverStories")
+                        div(class="sm:hidden").flex.flex-row
+                            a(href="tel:HREF_PHONE_NUMBER").flex.items-center.justify-center.border-l.border-rs-gray.w-mob-60.h-mob-60
+                                img.lozad(src="/assets/img/phone.svg" data-src="/assets/img/logo.svg" alt="Телефон").w-mob-20.h-mob-20
+                            button.flex.items-center.justify-center.border-l.border-rs-gray.w-mob-60.h-mob-60.transition-colors(class="hover:bg-rs-accent-active")
+                                img.lozad(src="/assets/img/burger.svg" data-src="/assets/img/burger.svg" alt="Меню").w-mob-20.h-mob-15
+                        div.hidden.flex-row.items-center(class="sm:flex")
+                            div.flex.flex-row.items-center.gap-x-fs-20
+                                img.lozad(class="w-fs-24 h-fs-24" src="/assets/img/pin.svg" data-src="/assets/img/pin.svg" alt="Указатель")
+                                p.text-fs-11 Долгопрудный, <br> улица Уличных улиц, дом 15
+                            div.flex.flex-row.items-center.gap-x-fs-14.mr-fs-55
+                                div.flex.flex-row.items-center.ml-fs-55.gap-x-fs-20
+                                    img.lozad.w-mob-20.h-mob-20(class="sm:w-fs-20 sm:h-fs-20" src="/assets/img/phone.svg" data-src="/assets/img/phone.svg" alt="Телефон")
+                                    a.text-fs-18(href="tel:HREF_PHONE_NUMBER") +7 (499) 000-00-00
+                                a(href="HREF_WHATSAPP")
+                                    img.lozad.w-fs-20.h-fs-20(src="/assets/img/wa.svg" data-src="/assets/img/wa.svg" alt="WhatsApp")
+                                a(href="HREF_TELEGRAM")
+                                    img.lozad.w-fs-20.h-fs-16(src="/assets/img/tg.svg" data-src="/assets/img/tg.svg" alt="Telegram")
+                            a(href="#callback").button.--small.text-center.inline-block перезвоните мне
+                .header__bottom.hidden.flex-row.items-center.px-fs-40(class="sm:flex")
+                    nav.nav
+                        ul.flex.flex-row.gap-x-fs-66
+                            li
+                                a(href="#") Тюнинг
+                            li
+                                a(href="#") ТО
+                            li
+                                a(href="#") Тиковое покрытие
+                            li.--current
+                                a(href="#") Каталог
+                            li
+                                a(href="#") Продажа
+                            li
+                                a(href="#") О компании
+                            li
+                                a(href="#") Контакты
+                    button.flex.items-center.justify-center.border-l.border-r.border-rs-gray.w-fs-66.h-fs-66.transition-colors.ml-auto(class="hover:bg-rs-accent-active")
+                        img(src="/assets/img/burger.svg" data-src="/assets/img/burger.svg" alt="Меню").w-fs-20.h-fs-15
+                        //- img.lozad(src="/assets/img/burger.svg" data-src="/assets/img/burger.svg" alt="Меню")

@@ -1,0 +1,24 @@
+@import "libs";
+@import "fonts";
+
+html{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body{
+    font-family: "RFDewiExpanded";
+    color: white;
+}
+
+// Slick Slider duct tape for gaps
+// between slides as follows:
+// 
+// .slick-slide {
+//     margin: 0 23px;
+// }
+// .slick-list {
+//     margin: 0 -23px;
+// }

@@ -1,0 +1,7 @@
+node_modules
+dist
+templates
+issues.md
+manual.md
+app/assets/css
+app/style.css

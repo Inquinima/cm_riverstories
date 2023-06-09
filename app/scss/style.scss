@@ -1,0 +1,44 @@
+@import "global";
+
+@layer utilities {
+    .noscroll{
+        @apply overflow-hidden;
+    }
+    .--blur{
+        @apply blur;
+    }
+}
+
+@layer components{
+    .body{
+        @apply relative bg-black;
+    }
+    .button{
+        @apply uppercase transition-colors duration-200 bg-rs-accent hover:bg-rs-accent-active focus:bg-rs-accent-active text-black py-mob-20 px-mob-40 sm:py-fs-25 sm:px-fs-40 font-bold;
+    }
+    .button.--small{
+        @apply px-mob-16 py-mob-13 sm:px-fs-16 sm:py-fs-13 text-mob-11 sm:text-fs-11 leading-140;
+    }
+    .header .header__bottom ul li, .footer .footer__top ul li{
+        @apply uppercase leading-140 text-mob-12 text-center sm:py-fs-23 sm:text-fs-12 sm:text-left transition-colors duration-200 hover:text-rs-accent-active;
+    }
+    .header .header__bottom ul li:not(:last-child), .footer .footer__top ul li:not(:last-child){
+        @apply relative  sm:after:content-["/"] sm:after:inline-block sm:after:absolute sm:after:-right-[1.719vw] sm:after:text-rs-gray mb-mob-14 sm:mb-0;
+    }
+    .header .header__bottom ul li{
+        @apply border-b-2 border-b-transparent;
+    }
+    .header .header__bottom ul li.--current{
+        @apply border-b-rs-accent-active text-rs-accent-active;
+    }
+    .footer .footer__top ul li{
+        @apply border-t-2 border-t-transparent;
+    }
+    .footer .footer__top ul li.--current{
+        @apply  sm:border-t-rs-accent-active text-rs-accent-active;
+    }
+}
+// *{
+//     border: red 1px solid;
+// 
+// your stuff here
