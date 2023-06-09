@@ -1,4 +1,20 @@
 include components/header.pug
 main.main
-    section.section
+    section.section.front.font-bold.uppercase
+        .front__top.text-center(class="sm:text-left")
+            .lozad.pt-mob-220.pb-mob-40(class="sm:pt-fs-90 sm:pb-fs-147")
+                .inner
+                    h1.text-mob-30.leading-110.mb-mob-20(class="sm:text-fs-80 sm:mb-fs-30") Лодки /<br> Катера
+                    h2.text-mob-11.mb-mob-30(class="sm:text-fs-16 sm:mb-fs-70 leading-200") Покупка, продажа и <br class="inline sm:hidden"> профессиональное <br class="sm:inline hidden">  обслуживание 
+                    a.block.button(href="/catalog" class="sm:w-fit") Перейти в каталог
+        .front__bottom.border-t.border-t-rs-gray(class="sm:border-b-rs-gray sm:border-b")
+            .inner.grid.grid-cols-1(class="sm:grid-cols-4")
+                div.py-mob-30.text-center(class="px-mob-20 sm:text-left sm:pt-fs-36 sm:pb-fs-38 sm:pl-0 sm:pr-fs-30 sm:grid sm:place-items-center")
+                    p.text-mob-16(class="sm:text-fs-22 leading-140") Полный спектр услуг “под ключ”:
+                div.triangle.border.border-rs-gray.border-b-0.py-mob-30(class="px-mob-20 sm:pt-fs-36 sm:pb-fs-38 sm:pl-fs-30 sm:pr-fs-147 sm:border-r-0 sm:grid sm:place-items-center")
+                    p.text-mob-11(class="sm:text-fs-13 leading-140") Продажа, обслуживание, ремонт, сезонное хранение, консервация
+                div.triangle.border.border-rs-gray.border-b-0.py-mob-30(class="px-mob-20 sm:pt-fs-36 sm:pb-fs-38 sm:pl-fs-30 sm:pr-fs-147 sm:border-r-0 sm:grid sm:place-items-center")
+                    p.text-mob-11(class="sm:text-fs-13 leading-140") Установка дополнительного оборудования
+                div.triangle.border.border-rs-gray.py-mob-30(class="px-mob-20 sm:pt-fs-36 sm:pb-fs-38 sm:pl-fs-30 sm:pr-fs-147 sm:border-b-0 sm:border-r-0 sm:grid sm:place-items-center")
+                    p.text-mob-11(class="sm:text-fs-13 leading-140") Тюнинг <br class="hidden sm:inline"> по индивидуальным проектам
 include components/footer.pug

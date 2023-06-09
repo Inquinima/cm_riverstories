@@ -1,6 +1,6 @@
-// $(()=>{
-//     const observer = lozad();
-//     observer.observe();
+$(()=>{
+    const observer = lozad();
+    observer.observe();
 
 //     let popupActive = false;
 //     function popupSwitch(){
@@ -171,5 +171,5 @@
 //             consentPopup.fadeIn();
 //         }, 2000);
 //     }
-// });
+});
 

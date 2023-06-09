@@ -7,6 +7,12 @@
     .--blur{
         @apply blur;
     }
+    .triangle{
+        @apply relative after:content-[""] after:block after:absolute after:top-[-0.278vw] after:left-[-0.278vw] after:border-t-[2.778vw] after:border-r-[2.778vw] after:border-transparent after:border-t-rs-accent after:h-0 after:w-0 sm:after:border-t-[0.625vw] sm:after:border-r-[0.625vw] sm:after:top-[-0.052vw] sm:after:left-[-0.052vw]
+    }
+    .inner{
+        @apply px-mob-20 sm:px-fs-40
+    }
 }
 
 @layer components{
@@ -14,7 +20,7 @@
         @apply relative bg-black;
     }
     .button{
-        @apply uppercase transition-colors duration-200 bg-rs-accent hover:bg-rs-accent-active focus:bg-rs-accent-active text-black py-mob-20 px-mob-40 sm:py-fs-25 sm:px-fs-40 font-bold;
+        @apply uppercase transition-colors duration-200 bg-rs-accent hover:bg-rs-accent-active focus:bg-rs-accent-active sm:text-fs-16 text-mob-16 text-black py-mob-20 px-mob-40 sm:py-fs-25 sm:px-fs-40 font-bold;
     }
     .button.--small{
         @apply px-mob-16 py-mob-13 sm:px-fs-16 sm:py-fs-13 text-mob-11 sm:text-fs-11 leading-140;
@@ -38,6 +44,22 @@
         @apply  sm:border-t-rs-accent-active text-rs-accent-active;
     }
 }
+
+
+.front .front__top > div{
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 70%), url('/assets/img/front_mob.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: top;
+}
+@media (min-width: 660px) {
+    .front .front__top > div{
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%), linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0,0,0,0)), url('/assets/img/front.webp');
+        background-size: cover;
+        background-position-y: unset;
+    }
+}
+
 // *{
 //     border: red 1px solid;
 // 
