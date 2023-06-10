@@ -1,6 +1,6 @@
 include components/header.pug
 main.main
-    section.section.front.font-bold.uppercase
+    section.section.front.font-bold.uppercase.mb-mob-30(class="sm:mb-0")
         .front__top.text-center(class="sm:text-left")
             .lozad.pt-mob-220.pb-mob-40(class="sm:pt-fs-90 sm:pb-fs-147")
                 .inner
@@ -17,4 +17,69 @@ main.main
                     p.text-mob-11(class="sm:text-fs-13 leading-140") Установка дополнительного оборудования
                 div.triangle.border.border-rs-gray.py-mob-30(class="px-mob-20 sm:pt-fs-36 sm:pb-fs-38 sm:pl-fs-30 sm:pr-fs-147 sm:border-b-0 sm:border-r-0 sm:grid sm:place-items-center")
                     p.text-mob-11(class="sm:text-fs-13 leading-140") Тюнинг <br class="hidden sm:inline"> по индивидуальным проектам
+    section.section.services.pb-mob-30(class="sm:pb-0")
+        //- .container-vw
+        h2.hidden Услуги
+        .services__items.grid.grid-cols-1.gap-y-mob-10(class="sm:gap-y-fs-1")
+            a.block.services__item.mx-auto.w-mob-320(class="group sm:w-full sm:grid sm:grid-cols-4" href="HREF_SERVICES" title="HREF_SERVICES_TITLE")
+                .services__item-image.relative(class="sm:order-2 sm:col-start-2 sm:col-end-5")
+                    img.lozad.w-mob-320.h-mob-120(class="sm:w-fs-1442 sm:h-fs-540" src="/assets/img/service_1.webp" data-src="/assets/img/service_1.webp" alt="#")
+                    div.absolute.w-full.h-full.top-0(class="bg-gradient-to-t from-black/30 from-0% to-black/0 to-30%")
+                .services__item-content.bg-white.text-black.py-mob-20(class="sm:order-1 col-span-1 sm:py-fs-60")
+                    .inner(class="sm:h-full sm:flex sm:flex-col")
+                        h3.uppercase.font-bold.text-mob-18.leading-140.mb-mob-20(class="sm:mb-fs-40 sm:text-fs-30") Сервисное обслуживание
+                        div.services__item-text.wysiwyg.mb-mob-30(class="sm:mb-0")
+                            //-  сюда можно вставить простой wysiwyg
+                            ul
+                                li Тюнинг
+                                li ТО
+                                li Тиковое покрытие
+                        .inline-block.arrow(class="mt-auto")
+            a.block.services__item.mx-auto.w-mob-320(class="group sm:w-full sm:grid sm:grid-cols-4" href="HREF_SERVICES" title="HREF_SERVICES_TITLE")
+                .services__item-image.relative(class="sm:order-2 sm:col-start-2 sm:col-end-5")
+                    img.lozad.w-mob-320.h-mob-120(class="sm:w-fs-1442 sm:h-fs-540" src="/assets/img/service_2.webp" data-src="/assets/img/service_2.webp" alt="#")
+                    div.absolute.w-full.h-full.top-0(class="bg-gradient-to-t from-black/30 from-0% to-black/0 to-30%")
+                .services__item-content.bg-white.text-black.py-mob-20(class="sm:order-1 col-span-1 sm:py-fs-60")
+                    .inner(class="sm:h-full sm:flex sm:flex-col")
+                        h3.uppercase.font-bold.text-mob-18.leading-140.mb-mob-20(class="sm:mb-fs-40 sm:text-fs-30") ПОКУПКА
+                        div.services__item-text.wysiwyg.mb-mob-30(class="sm:mb-0")
+                            //-  сюда можно вставить простой wysiwyg
+                            p 112 лодок и катеров в наличии
+                            p 17 мировых производителей от официального дилера без переплат
+                            p Новые модели и б/у 
+                        .inline-block.arrow(class="mt-auto")
+            a.block.services__item.mx-auto.w-mob-320(class="group sm:w-full sm:grid sm:grid-cols-4" href="HREF_SERVICES" title="HREF_SERVICES_TITLE")
+                .services__item-image.relative(class="sm:order-2 sm:col-start-2 sm:col-end-5")
+                    img.lozad.w-mob-320.h-mob-120(class="sm:w-fs-1442 sm:h-fs-540" src="/assets/img/service_3.webp" data-src="/assets/img/service_3.webp" alt="#")
+                    div.absolute.w-full.h-full.top-0(class="bg-gradient-to-t from-black/30 from-0% to-black/0 to-30%")
+                .services__item-content.bg-white.text-black.py-mob-20(class="sm:order-1 col-span-1 sm:py-fs-60")
+                    .inner(class="sm:h-full sm:flex sm:flex-col")
+                        h3.uppercase.font-bold.text-mob-18.leading-140.mb-mob-20(class="sm:mb-fs-40 sm:text-fs-30") ПРОДАЖА
+                        div.services__item-text.wysiwyg.mb-mob-30(class="sm:mb-0")
+                            //-  сюда можно вставить простой wysiwyg
+                            p профессионально поможем в продаже вашего катера, выкупим в случае срочной сделки
+                        .inline-block.arrow(class="mt-auto")
+    section.section.about
+        .about__items.grid.grid-cols-1.text-center(class="sm:grid-cols-4 bg-[#1D1D1D] sm:px-fs-40 sm:text-left")
+            .about__item.pt-mob-40.pb-mob-36.px-mob-30(class="sm:py-fs-80 sm:pr-fs-40 sm:pl-0")
+                h2.uppercase.text-mob-18.leading-140.font-bold.mb-fs-70(class="sm:text-fs-30") Центр продаж <br> и обслуживания лодок и катеров
+                a.uppercase.underline.mark.w-fit.text-fs-13(href="#callback" class="hidden sm:inline-block") пообщаться со специалистом 
+            .about__item.py-mob-30.px-mob-30(class="sm:py-fs-80 sm:pr-fs-40 sm:pl-fs-30")
+                div.mb-mob-20.leading-none(class="sm:mb-fs-50")
+                    span.inline-block.w-mob-10.h-mob-10.triangle(class="sm:h-fs-12 sm:w-fs-12")
+                p.text-mob-14.leading-140.uppercase.font-bold.mb-mob-16(class="sm:mb-fs-30 sm:text-fs-18") Делаем все с вашим минимальным участием
+                p.text-mob-12.leading-140(class="sm:text-fs-16 sm:leading-160") Все услуги по катерам и лодкам в одном месте для вашего удобства
+            .about__item.py-mob-30.px-mob-30(class="sm:py-fs-80 sm:pr-fs-40 sm:pl-fs-30")
+                div.mb-mob-20.leading-none(class="sm:mb-fs-50")
+                    span.inline-block.w-mob-10.h-mob-10.triangle(class="sm:h-fs-12 sm:w-fs-12")
+                    span.inline-block.w-mob-10.h-mob-10.triangle(class="sm:h-fs-12 sm:w-fs-12")
+                p.text-mob-14.leading-140.uppercase.font-bold.mb-mob-16(class="sm:mb-fs-30 sm:text-fs-18") От идеи до полной реализации, с заботой о каждом клиенте
+                p.text-mob-12.leading-140(class="sm:text-fs-16 sm:leading-160") Все услуги по катерам и лодкам в одном месте для вашего удобства
+            .about__item.py-mob-30.px-mob-30(class="sm:py-fs-80 sm:pr-fs-40 sm:pl-fs-30")
+                div.mb-mob-20.leading-none(class="sm:mb-fs-50")
+                    span.inline-block.w-mob-9.h-mob-10.triangle(class="sm:h-fs-12 sm:w-fs-12")
+                    span.inline-block.w-mob-9.h-mob-10.triangle(class="sm:h-fs-12 sm:w-fs-12")
+                    span.inline-block.w-mob-9.h-mob-10.triangle(class="sm:h-fs-12 sm:w-fs-12")
+                p.text-mob-14.leading-140.uppercase.font-bold.mb-mob-16(class="sm:mb-fs-30 sm:text-fs-18") Решение нестандартных и не типовых задач
+                p.text-mob-12.leading-140(class="sm:text-fs-16 sm:leading-160") Поможем вам наслаждаться отдыхом и путешествиями на воде по самым выгодным условиям
 include components/footer.pug
