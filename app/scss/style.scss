@@ -43,6 +43,9 @@
     .button.--small{
         @apply px-mob-16 py-mob-13 sm:px-fs-16 sm:py-fs-13 text-mob-11 sm:text-fs-11 leading-140;
     }
+    .button.--bigger{
+        @apply py-mob-21 sm:py-fs-26 leading-200
+    }
 
     .arrow{
         @apply transition-colors duration-200 bg-rs-accent hover:bg-rs-accent-active focus:bg-rs-accent-active inline-block w-mob-34 h-mob-34 bg-[url('/assets/img/arrow_next.svg')] bg-center bg-no-repeat group-hover:bg-rs-accent-active bg-[length:4.722vw_4.444vw] sm:w-fs-50 sm:h-fs-50 sm:bg-[length:1.146vw_1.042vw] cursor-pointer
