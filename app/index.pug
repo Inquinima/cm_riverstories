@@ -60,8 +60,8 @@ main.main
                             p профессионально поможем в продаже вашего катера, выкупим в случае срочной сделки
                         .inline-block.arrow(class="mt-auto")
     section.section.about
-        .about__items.grid.grid-cols-1.text-center(class="sm:grid-cols-4 bg-[#1D1D1D] sm:px-fs-40 sm:text-left")
-            .about__item.pt-mob-40.pb-mob-36.px-mob-30(class="sm:py-fs-80 sm:pr-fs-40 sm:pl-0")
+        .about__items.grid.grid-cols-1.text-center(class="sm:grid-cols-4 bg-[#1D1D1D] sm:text-left")
+            .about__item.pt-mob-40.pb-mob-36.px-mob-30(class="sm:py-fs-80 sm:px-fs-40")
                 h2.uppercase.text-mob-18.leading-140.font-bold.mb-fs-70(class="sm:text-fs-30") Центр продаж <br> и обслуживания лодок и катеров
                 a.uppercase.underline.mark.w-fit.text-fs-13(href="#callback" class="hidden sm:inline-block") пообщаться со специалистом 
             .about__item.py-mob-30.px-mob-30(class="sm:py-fs-80 sm:pr-fs-40 sm:pl-fs-30")
@@ -75,11 +75,149 @@ main.main
                     span.inline-block.w-mob-10.h-mob-10.triangle(class="sm:h-fs-12 sm:w-fs-12")
                 p.text-mob-14.leading-140.uppercase.font-bold.mb-mob-16(class="sm:mb-fs-30 sm:text-fs-18") От идеи до полной реализации, с заботой о каждом клиенте
                 p.text-mob-12.leading-140(class="sm:text-fs-16 sm:leading-160") Все услуги по катерам и лодкам в одном месте для вашего удобства
-            .about__item.py-mob-30.px-mob-30(class="sm:py-fs-80 sm:pr-fs-40 sm:pl-fs-30")
+            .about__item.py-mob-30.px-mob-30(class="sm:py-fs-80 sm:pr-fs-80 sm:pl-fs-30")
                 div.mb-mob-20.leading-none(class="sm:mb-fs-50")
                     span.inline-block.w-mob-9.h-mob-10.triangle(class="sm:h-fs-12 sm:w-fs-12")
                     span.inline-block.w-mob-9.h-mob-10.triangle(class="sm:h-fs-12 sm:w-fs-12")
                     span.inline-block.w-mob-9.h-mob-10.triangle(class="sm:h-fs-12 sm:w-fs-12")
                 p.text-mob-14.leading-140.uppercase.font-bold.mb-mob-16(class="sm:mb-fs-30 sm:text-fs-18") Решение нестандартных и не типовых задач
                 p.text-mob-12.leading-140(class="sm:text-fs-16 sm:leading-160") Поможем вам наслаждаться отдыхом и путешествиями на воде по самым выгодным условиям
+    section.section.cases.pt-mob-40.overflow-hidden(class="sm:pt-fs-100")
+        .grid.grid-cols-1(class="sm:grid-cols-4")
+            .flex.flex-row.mb-mob-36.justify-center(class="sm:mb-fs-40 sm:items-center sm:justify-between sm:col-start-2 sm:col-end-4")
+                h2.leading-140.uppercase.font-bold.text-mob-26(class="sm:text-fs-40") Кейсы
+                .slider__arrows.hidden(class="sm:block")
+                    .cases-prev.arrow.--prev
+                    .cases-next.arrow
+        .slider__items.cases__items.text-black
+            .slider__item.cases__item.p-mob-20.bg-white(class="sm:p-fs-30")
+                .slide-inner.w-mob-280(class="sm:w-fs-905 sm:min-h-[22.917vw]")
+                    .cases__item-head.pb-mob-16.border-b-black.border-b-mob-1.mb-mob-20.flex.flex-row.items-center(class="sm:border-b-fs-1 sm:pb-fs-30 sm:mb-fs-30")
+                        .cases__item-user.inline-block.p-mob-5.mr-mob-12(class="sm:p-fs-10 sm:mr-fs-24 bg-[#E1E1E1]")
+                            img.lozad.w-mob-20.h-mob-20(class="sm:w-fs-30 sm:h-fs-30" src="/assets/img/user.svg" data-src="/assets/img/user.svg" alt="")
+                        span.cases__item-userinfo.uppercase.font-bold.text-mob-10(class="sm:text-fs-13") МИХАИЛ, г. Москва
+                    .cases__item-body
+                        p.uppercase.font-bold.text-mob-11.mb-mob-14(class="sm:text-fs-13 sm:mb-fs-20") ЗАДАЧА:
+                        p.uppercase.font-bold.text-mob-14.mb-mob-20(class="sm:text-fs-18 sm:mb-fs-40") забрать катер от клиента, подобрать оборудование для комфортного выхода в море на дальние расстояния. 
+                        div.cases__item-main.text-mob-12(class="sm:text-fs-14")
+                            //- Здесь может быть простой wysiwyg 
+                            p Организовали забор катера от клиента. Заранее договорились об удобной дате и времени приезда. Своими силами погрузили и отвезли в мастерскую. Подобрали необходимое оборудование согласно поставленной задаче. В рекордно короткие сроки все установили. В назначенный день привезли яхту обратно. 
+                            p Поставили только действительно необходимое оборудование, клиент не переплатил и уже наслаждается путешествием. 
+            .slider__item.cases__item.p-mob-20.bg-white(class="sm:p-fs-30")
+                .slide-inner.w-mob-280(class="sm:w-fs-905 sm:h-fs-440 sm:min-h-[22.917vw]")
+                    .cases__item-head.pb-mob-16.border-b-black.border-b-mob-1.mb-mob-20.flex.flex-row.items-center(class="sm:border-b-fs-1 sm:pb-fs-30 sm:mb-fs-30")
+                        .cases__item-user.inline-block.p-mob-5.mr-mob-12(class="sm:p-fs-10 sm:mr-fs-24 bg-[#E1E1E1]")
+                            img.lozad.w-mob-20.h-mob-20(class="sm:w-fs-30 sm:h-fs-30" src="/assets/img/user.svg" data-src="/assets/img/user.svg" alt="")
+                        span.cases__item-userinfo.uppercase.font-bold.text-mob-10(class="sm:text-fs-13") МИХАИЛ, г. Москва
+                    .cases__item-body
+                        p.uppercase.font-bold.text-mob-11.mb-mob-14(class="sm:text-fs-13 sm:mb-fs-20") ЗАДАЧА:
+                        p.uppercase.font-bold.text-mob-14.mb-mob-20(class="sm:text-fs-18 sm:mb-fs-40") забрать катер от клиента, подобрать оборудование для комфортного выхода в море на дальние расстояния. 
+                        div.cases__item-main.text-mob-12(class="sm:text-fs-14")
+                            //- Здесь может быть простой wysiwyg 
+                            p Организовали забор катера от клиента. Заранее договорились об удобной дате и времени приезда. Своими силами погрузили и отвезли в мастерскую. Подобрали необходимое оборудование согласно поставленной задаче. В рекордно короткие сроки все установили. В назначенный день привезли яхту обратно. 
+                            p Поставили только действительно необходимое оборудование, клиент не переплатил и уже наслаждается путешествием. 
+            .slider__item.cases__item.p-mob-20.bg-white(class="sm:p-fs-30")
+                .slide-inner.w-mob-280(class="sm:w-fs-905 sm:h-fs-440 sm:min-h-[22.917vw]")
+                    .cases__item-head.pb-mob-16.border-b-black.border-b-mob-1.mb-mob-20.flex.flex-row.items-center(class="sm:border-b-fs-1 sm:pb-fs-30 sm:mb-fs-30")
+                        .cases__item-user.inline-block.p-mob-5.mr-mob-12(class="sm:p-fs-10 sm:mr-fs-24 bg-[#E1E1E1]")
+                            img.lozad.w-mob-20.h-mob-20(class="sm:w-fs-30 sm:h-fs-30" src="/assets/img/user.svg" data-src="/assets/img/user.svg" alt="")
+                        span.cases__item-userinfo.uppercase.font-bold.text-mob-10(class="sm:text-fs-13") МИХАИЛ, г. Москва
+                    .cases__item-body
+                        p.uppercase.font-bold.text-mob-11.mb-mob-14(class="sm:text-fs-13 sm:mb-fs-20") ЗАДАЧА:
+                        p.uppercase.font-bold.text-mob-14.mb-mob-20(class="sm:text-fs-18 sm:mb-fs-40") забрать катер от клиента, подобрать оборудование для комфортного выхода в море на дальние расстояния. 
+                        div.cases__item-main.text-mob-12(class="sm:text-fs-14")
+                            //- Здесь может быть простой wysiwyg 
+                            p Организовали забор катера от клиента. Заранее договорились об удобной дате и времени приезда. Своими силами погрузили и отвезли в мастерскую. Подобрали необходимое оборудование согласно поставленной задаче. В рекордно короткие сроки все установили. В назначенный день привезли яхту обратно. 
+                            p Поставили только действительно необходимое оборудование, клиент не переплатил и уже наслаждается путешествием. 
+            .slider__item.cases__item.p-mob-20.bg-white(class="sm:p-fs-30")
+                .slide-inner.w-mob-280(class="sm:w-fs-905 sm:h-fs-440 sm:min-h-[22.917vw]")
+                    .cases__item-head.pb-mob-16.border-b-black.border-b-mob-1.mb-mob-20.flex.flex-row.items-center(class="sm:border-b-fs-1 sm:pb-fs-30 sm:mb-fs-30")
+                        .cases__item-user.inline-block.p-mob-5.mr-mob-12(class="sm:p-fs-10 sm:mr-fs-24 bg-[#E1E1E1]")
+                            img.lozad.w-mob-20.h-mob-20(class="sm:w-fs-30 sm:h-fs-30" src="/assets/img/user.svg" data-src="/assets/img/user.svg" alt="")
+                        span.cases__item-userinfo.uppercase.font-bold.text-mob-10(class="sm:text-fs-13") МИХАИЛ, г. Москва
+                    .cases__item-body
+                        p.uppercase.font-bold.text-mob-11.mb-mob-14(class="sm:text-fs-13 sm:mb-fs-20") ЗАДАЧА:
+                        p.uppercase.font-bold.text-mob-14.mb-mob-20(class="sm:text-fs-18 sm:mb-fs-40") забрать катер от клиента, подобрать оборудование для комфортного выхода в море на дальние расстояния. 
+                        div.cases__item-main.text-mob-12(class="sm:text-fs-14")
+                            //- Здесь может быть простой wysiwyg 
+                            p Организовали забор катера от клиента. Заранее договорились об удобной дате и времени приезда. Своими силами погрузили и отвезли в мастерскую. Подобрали необходимое оборудование согласно поставленной задаче. В рекордно короткие сроки все установили. В назначенный день привезли яхту обратно. 
+                            p Поставили только действительно необходимое оборудование, клиент не переплатил и уже наслаждается путешествием. 
+            .slider__item.cases__item.p-mob-20.bg-white(class="sm:p-fs-30")
+                .slide-inner.w-mob-280(class="sm:w-fs-905 sm:h-fs-440 sm:min-h-[22.917vw]")
+                    .cases__item-head.pb-mob-16.border-b-black.border-b-mob-1.mb-mob-20.flex.flex-row.items-center(class="sm:border-b-fs-1 sm:pb-fs-30 sm:mb-fs-30")
+                        .cases__item-user.inline-block.p-mob-5.mr-mob-12(class="sm:p-fs-10 sm:mr-fs-24 bg-[#E1E1E1]")
+                            img.lozad.w-mob-20.h-mob-20(class="sm:w-fs-30 sm:h-fs-30" src="/assets/img/user.svg" data-src="/assets/img/user.svg" alt="")
+                        span.cases__item-userinfo.uppercase.font-bold.text-mob-10(class="sm:text-fs-13") МИХАИЛ, г. Москва
+                    .cases__item-body
+                        p.uppercase.font-bold.text-mob-11.mb-mob-14(class="sm:text-fs-13 sm:mb-fs-20") ЗАДАЧА:
+                        p.uppercase.font-bold.text-mob-14.mb-mob-20(class="sm:text-fs-18 sm:mb-fs-40") забрать катер от клиента, подобрать оборудование для комфортного выхода в море на дальние расстояния. 
+                        div.cases__item-main.text-mob-12(class="sm:text-fs-14")
+                            //- Здесь может быть простой wysiwyg 
+                            p Организовали забор катера от клиента. Заранее договорились об удобной дате и времени приезда. Своими силами погрузили и отвезли в мастерскую. Подобрали необходимое оборудование согласно поставленной задаче. В рекордно короткие сроки все установили. В назначенный день привезли яхту обратно. 
+                            p Поставили только действительно необходимое оборудование, клиент не переплатил и уже наслаждается путешествием. 
+    section.section.cta.lozad(data-background-image="/assets/img/wave.webp")
+        .inner
+    section.section.reviews.pt-mob-40.overflow-hidden(class="sm:pt-fs-100")
+        .grid.grid-cols-1(class="sm:grid-cols-4")
+            .flex.flex-row.mb-mob-36.justify-center(class="sm:mb-fs-40 sm:items-center sm:justify-between sm:col-start-2 sm:col-end-4")
+                h2.leading-140.uppercase.font-bold.text-mob-26(class="sm:text-fs-40") ОТЗЫВЫ КЛИЕНТОВ
+                .slider__arrows.hidden(class="sm:block")
+                    .reviews-prev.arrow.--prev
+                    .reviews-next.arrow
+        .slider__items.reviews__items.inner
+            .slider__item.reviews__item.p-mob-20(class="sm:p-fs-30 bg-[#1D1D1D]")
+                .slide-inner.w-mob-280(class="sm:w-fs-385")
+                    .reviews__item-head.pb-mob-16.border-b-rs-gray.border-b-mob-1.mb-mob-20.flex.flex-row.items-center(class="sm:border-b-fs-1 sm:pb-fs-30 sm:mb-fs-30")
+                        .reviews__item-user.inline-block.p-mob-5.mr-mob-12(class="sm:p-fs-10 sm:mr-fs-24 bg-[#E1E1E1]")
+                            img.lozad.w-mob-20.h-mob-20(class="sm:w-fs-30 sm:h-fs-30" src="/assets/img/user.svg" data-src="/assets/img/user.svg" alt="")
+                        span.reviews__item-userinfo.uppercase.font-bold.text-mob-10(class="sm:text-fs-13") МИХАИЛ, г. Москва
+                    .reviews__item-body
+                        div.cases__item-main.text-mob-12(class="sm:text-fs-16")
+                            //- Здесь может быть простой wysiwyg 
+                            p Это значит, что вы можете полностью доверить нам задачи по подбору и обслуживанию катеров. Мы готовы предложить индивидуальные, смелые и функциональные решения для каждого клиента. 
+                            p Это значит, что вы можете полностью доверить нам задачи по подбору и обслуживанию катеров. Мы готовы предложить индивидуальные, смелые и функциональные решения для каждого клиента. 
+            .slider__item.reviews__item.p-mob-20(class="sm:p-fs-30 bg-[#1D1D1D]")
+                .slide-inner.w-mob-280(class="sm:w-fs-385")
+                    .reviews__item-head.pb-mob-16.border-b-rs-gray.border-b-mob-1.mb-mob-20.flex.flex-row.items-center(class="sm:border-b-fs-1 sm:pb-fs-30 sm:mb-fs-30")
+                        .reviews__item-user.inline-block.p-mob-5.mr-mob-12(class="sm:p-fs-10 sm:mr-fs-24 bg-[#E1E1E1]")
+                            img.lozad.w-mob-20.h-mob-20(class="sm:w-fs-30 sm:h-fs-30" src="/assets/img/user.svg" data-src="/assets/img/user.svg" alt="")
+                        span.reviews__item-userinfo.uppercase.font-bold.text-mob-10(class="sm:text-fs-13") МИХАИЛ, г. Москва
+                    .reviews__item-body
+                        div.cases__item-main.text-mob-12(class="sm:text-fs-16")
+                            //- Здесь может быть простой wysiwyg 
+                            p Это значит, что вы можете полностью доверить нам задачи по подбору и обслуживанию катеров. Мы готовы предложить индивидуальные, смелые и функциональные решения для каждого клиента. 
+                            p Это значит, что вы можете полностью доверить нам задачи по подбору и обслуживанию катеров. Мы готовы предложить индивидуальные, смелые и функциональные решения для каждого клиента. 
+            .slider__item.reviews__item.p-mob-20(class="sm:p-fs-30 bg-[#1D1D1D]")
+                .slide-inner.w-mob-280(class="sm:w-fs-385")
+                    .reviews__item-head.pb-mob-16.border-b-rs-gray.border-b-mob-1.mb-mob-20.flex.flex-row.items-center(class="sm:border-b-fs-1 sm:pb-fs-30 sm:mb-fs-30")
+                        .reviews__item-user.inline-block.p-mob-5.mr-mob-12(class="sm:p-fs-10 sm:mr-fs-24 bg-[#E1E1E1]")
+                            img.lozad.w-mob-20.h-mob-20(class="sm:w-fs-30 sm:h-fs-30" src="/assets/img/user.svg" data-src="/assets/img/user.svg" alt="")
+                        span.reviews__item-userinfo.uppercase.font-bold.text-mob-10(class="sm:text-fs-13") МИХАИЛ, г. Москва
+                    .reviews__item-body
+                        div.cases__item-main.text-mob-12(class="sm:text-fs-16")
+                            //- Здесь может быть простой wysiwyg 
+                            p Это значит, что вы можете полностью доверить нам задачи по подбору и обслуживанию катеров. Мы готовы предложить индивидуальные, смелые и функциональные решения для каждого клиента. 
+                            p Это значит, что вы можете полностью доверить нам задачи по подбору и обслуживанию катеров. Мы готовы предложить индивидуальные, смелые и функциональные решения для каждого клиента. 
+            .slider__item.reviews__item.p-mob-20(class="sm:p-fs-30 bg-[#1D1D1D]")
+                .slide-inner.w-mob-280(class="sm:w-fs-385")
+                    .reviews__item-head.pb-mob-16.border-b-rs-gray.border-b-mob-1.mb-mob-20.flex.flex-row.items-center(class="sm:border-b-fs-1 sm:pb-fs-30 sm:mb-fs-30")
+                        .reviews__item-user.inline-block.p-mob-5.mr-mob-12(class="sm:p-fs-10 sm:mr-fs-24 bg-[#E1E1E1]")
+                            img.lozad.w-mob-20.h-mob-20(class="sm:w-fs-30 sm:h-fs-30" src="/assets/img/user.svg" data-src="/assets/img/user.svg" alt="")
+                        span.reviews__item-userinfo.uppercase.font-bold.text-mob-10(class="sm:text-fs-13") МИХАИЛ, г. Москва
+                    .reviews__item-body
+                        div.cases__item-main.text-mob-12(class="sm:text-fs-16")
+                            //- Здесь может быть простой wysiwyg 
+                            p Это значит, что вы можете полностью доверить нам задачи по подбору и обслуживанию катеров. Мы готовы предложить индивидуальные, смелые и функциональные решения для каждого клиента. 
+                            p Это значит, что вы можете полностью доверить нам задачи по подбору и обслуживанию катеров. Мы готовы предложить индивидуальные, смелые и функциональные решения для каждого клиента. 
+            .slider__item.reviews__item.p-mob-20(class="sm:p-fs-30 bg-[#1D1D1D]")
+                .slide-inner.w-mob-280(class="sm:w-fs-385")
+                    .reviews__item-head.pb-mob-16.border-b-rs-gray.border-b-mob-1.mb-mob-20.flex.flex-row.items-center(class="sm:border-b-fs-1 sm:pb-fs-30 sm:mb-fs-30")
+                        .reviews__item-user.inline-block.p-mob-5.mr-mob-12(class="sm:p-fs-10 sm:mr-fs-24 bg-[#E1E1E1]")
+                            img.lozad.w-mob-20.h-mob-20(class="sm:w-fs-30 sm:h-fs-30" src="/assets/img/user.svg" data-src="/assets/img/user.svg" alt="")
+                        span.reviews__item-userinfo.uppercase.font-bold.text-mob-10(class="sm:text-fs-13") МИХАИЛ, г. Москва
+                    .reviews__item-body
+                        div.cases__item-main.text-mob-12(class="sm:text-fs-16")
+                            //- Здесь может быть простой wysiwyg 
+                            p Это значит, что вы можете полностью доверить нам задачи по подбору и обслуживанию катеров. Мы готовы предложить индивидуальные, смелые и функциональные решения для каждого клиента. 
+                            p Это значит, что вы можете полностью доверить нам задачи по подбору и обслуживанию катеров. Мы готовы предложить индивидуальные, смелые и функциональные решения для каждого клиента. 
 include components/footer.pug

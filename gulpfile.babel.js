@@ -45,7 +45,7 @@ task('css', function(){
     'node_modules/tailwindcss/utilities.css',
     // 'node_modules/normalize.css/normalize.css',
     'node_modules/slick-carousel/slick/slick.css',
-    // 'node_modules/magnific-popup/dist/magnific-popup.css'
+    'node_modules/magnific-popup/dist/magnific-popup.css'
     ])
     .pipe(concat('_libs.scss'))
     .pipe(dest('app/scss'))
@@ -58,7 +58,7 @@ task('js', function(){
   return src([
     'node_modules/lozad/dist/lozad.min.js',
     'node_modules/slick-carousel/slick/slick.js',
-    // 'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
+    'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
     // 'node_modules/simple-parallax-js/dist/simpleParallax.min.js'
   ])
     .pipe(concat('libs.min.js'))
