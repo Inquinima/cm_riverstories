@@ -128,6 +128,10 @@
     .mark{
         @apply relative block pl-mob-26 sm:pl-fs-26 before:inline-block before:absolute before:w-mob-6 before:h-mob-6 sm:before:h-fs-6 sm:before:w-fs-6 before:content-[""] before:bg-rs-accent before:top-1/2 before:-translate-y-1/2 before:left-0
     }
+
+    .info__partners div:not(:last-child){
+        @apply border-r-black border-r-mob-1 sm:border-r-fs-1
+    }
 }
 
 
@@ -144,22 +148,7 @@
         background-position-y: unset;
     }
 }
-// .cases__items .slick-slide {
-//     margin: 0 2.222vw;
-// }
-// .cases__items .slick-list {
-//     margin: 0 -2.222vw;
-// }
 
-// @media (min-width: 660px){
-//     .cases__items .slick-slide {
-//         margin: 0 1.563vw;
-//     }
-//     .cases__items .slick-list {
-//         margin: 0 -1.563vw;
-//     }  
-// }
 // *{
 //     border: red 1px solid;
-// 
-// your stuff here
+// }
