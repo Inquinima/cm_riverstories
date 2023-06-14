@@ -1281,6 +1281,10 @@ ul.bullets li.slick-active button {
   height: 57.778vw;
 }
 
+.h-mob-212 {
+  height: 58.889vw;
+}
+
 .h-mob-214 {
   height: 59.444vw;
 }
@@ -1467,6 +1471,10 @@ ul.bullets li.slick-active button {
 
 .gap-y-mob-40 {
   row-gap: 11.111vw;
+}
+
+.gap-y-mob-60 {
+  row-gap: 16.667vw;
 }
 
 .overflow-hidden {
@@ -1710,8 +1718,8 @@ ul.bullets li.slick-active button {
   padding-right: 23.611vw;
 }
 
-.pt-fs-100 {
-  padding-top: 5.208vw;
+.pt-fs-20 {
+  padding-top: 1.042vw;
 }
 
 .pt-mob-14 {
@@ -1736,10 +1744,6 @@ ul.bullets li.slick-active button {
 
 .pt-mob-40 {
   padding-top: 11.111vw;
-}
-
-.pt-mob-80 {
-  padding-top: 22.222vw;
 }
 
 .text-center {
@@ -2730,6 +2734,10 @@ body {
     grid-column: span 2 / span 2;
   }
 
+  .sm\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
   .sm\:col-start-2 {
     grid-column-start: 2;
   }
@@ -2776,6 +2784,10 @@ body {
 
   .sm\:mb-fs-60 {
     margin-bottom: 3.125vw;
+  }
+
+  .sm\:mb-fs-65 {
+    margin-bottom: 3.385vw;
   }
 
   .sm\:mb-fs-70 {
@@ -2904,6 +2916,10 @@ body {
 
   .sm\:h-fs-440 {
     height: 22.917vw;
+  }
+
+  .sm\:h-fs-450 {
+    height: 23.438vw;
   }
 
   .sm\:h-fs-494 {
@@ -3086,6 +3102,10 @@ body {
     row-gap: 0.417vw;
   }
 
+  .sm\:gap-y-fs-80 {
+    row-gap: 4.167vw;
+  }
+
   .sm\:self-end {
     align-self: flex-end;
   }
@@ -3257,8 +3277,20 @@ body {
     padding-left: 0px;
   }
 
+  .sm\:pl-fs-100 {
+    padding-left: 5.208vw;
+  }
+
+  .sm\:pl-fs-110 {
+    padding-left: 5.729vw;
+  }
+
   .sm\:pl-fs-15 {
     padding-left: 0.781vw;
+  }
+
+  .sm\:pl-fs-20 {
+    padding-left: 1.042vw;
   }
 
   .sm\:pl-fs-30 {
@@ -3273,12 +3305,12 @@ body {
     padding-left: 4.167vw;
   }
 
-  .sm\:pl-fs-90 {
-    padding-left: 4.688vw;
-  }
-
   .sm\:pr-0 {
     padding-right: 0px;
+  }
+
+  .sm\:pr-fs-110 {
+    padding-right: 5.729vw;
   }
 
   .sm\:pr-fs-120 {
@@ -3317,6 +3349,10 @@ body {
     padding-right: 4.167vw;
   }
 
+  .sm\:pr-fs-86 {
+    padding-right: 4.479vw;
+  }
+
   .sm\:pt-0 {
     padding-top: 0px;
   }
@@ -3341,6 +3377,10 @@ body {
     padding-top: 1.875vw;
   }
 
+  .sm\:pt-fs-40 {
+    padding-top: 2.083vw;
+  }
+
   .sm\:pt-fs-50 {
     padding-top: 2.604vw;
   }
@@ -3351,10 +3391,6 @@ body {
 
   .sm\:pt-fs-90 {
     padding-top: 4.688vw;
-  }
-
-  .sm\:pl-fs-100 {
-    padding-left: 5.208vw;
   }
 
   .sm\:text-left {

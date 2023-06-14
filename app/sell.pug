@@ -1,4 +1,46 @@
 include components/header.pug
 main.main
-
+    section.section.front.font-bold.uppercase.mb-mob-30(class="sm:mb-0")
+        .front__top
+            .lozad.pt-mob-220.pb-mob-40(class="sm:pt-fs-90 sm:pb-fs-147")
+                .inner
+                    h1.text-mob-30.leading-110.mb-mob-34(class="sm:text-fs-80 sm:mb-fs-65") Продажа / Выкуп <br> водного <br> транспорта
+                    a.block.button.text-center(href="/catalog" class="sm:w-fit") Пообщаться <br class="sm:hidden"> со специалистом
+        .front__bottom.border-t.border-t-rs-gray(class="sm:border-b-rs-gray sm:border-b")
+            .inner.grid.grid-cols-1(class="sm:grid-cols-4")
+                div.py-mob-30.text-center(class="px-mob-20 sm:text-left sm:pt-fs-36 sm:pb-fs-38 sm:pl-0 sm:pr-fs-30 sm:grid sm:place-items-center")
+                    p.text-mob-16(class="sm:text-fs-22 leading-140") Полный спектр <br> услуг:
+                div.triangle.border.border-rs-gray.border-b-0.py-mob-30(class="px-mob-20 sm:pt-fs-36 sm:pb-fs-38 sm:pl-fs-30 sm:pr-fs-86 sm:border-r-0 sm:grid sm:place-items-center")
+                    p.text-mob-11(class="sm:text-fs-13 leading-140") Ведем переговоры от вашего имени и проводим комплексную процедуру купли-продажи
+                div.triangle.border.border-rs-gray.border-b-0.py-mob-30(class="px-mob-20 sm:pt-fs-36 sm:pb-fs-38 sm:pl-fs-30 sm:pr-fs-86 sm:border-r-0 sm:grid sm:place-items-center")
+                    p.text-mob-11(class="sm:text-fs-13 leading-140") Регистрация <br> и юридическое сопровождение
+                div.triangle.border.border-rs-gray.py-mob-30(class="px-mob-20 sm:pt-fs-36 sm:pb-fs-38 sm:pl-fs-30 sm:pr-fs-86 sm:border-b-0 sm:border-r-0 sm:grid sm:place-items-center")
+                    p.text-mob-11(class="sm:text-fs-13 leading-140") Гарантируем скорость закрытия каждой сделки по выгодной цене
+    section.section.advantages
+        .grid.grid-cols-1.px-mob-20(class="sm:grid-cols-4 sm:px-0")
+            div(class="")
+            div(class="sm:col-span-3 grid grid-cols-1 gap-y-mob-60 sm:gap-y-fs-80")
+                .grid.grid-cols-1(class="sm:grid-cols-2 sm:pl-fs-20 sm:pr-fs-40")
+                    div.h-mob-212.w-full.overflow-hidden(class="sm:h-fs-450")
+                        img.lozad.object-cover.object-center.w-full.h-full(src="/assets/img/adv/adv_1.webp" data-src="/assets/img/adv/adv_1.webp" alt="")
+                    div.pt-mob-20(class="sm:pt-fs-40 sm:pl-fs-110")
+                        h3.uppercase.text-mob-18.leading-140.font-bold.mb-mob-20(class="sm:text-fs-30 sm:mb-fs-30") Юридическое сопровождение сделок, консалтинговые услуги
+                        p.text-mob-12.leading-140(class="sm:text-fs-16") Профессиональный брокер будет представлять ваши интересы на всех этапах сделки
+                .grid.grid-cols-1(class="sm:grid-cols-2 sm:pl-fs-20 sm:pr-fs-40")
+                    div.h-mob-212.w-full.overflow-hidden(class="sm:h-fs-450 sm:order-2")
+                        img.lozad.object-cover.object-center.w-full.h-full(src="/assets/img/adv/adv_2.webp" data-src="/assets/img/adv/adv_2.webp" alt="")
+                    div.pt-mob-20(class="sm:pt-fs-40 sm:order-1 sm:pr-fs-110")
+                        h3.uppercase.text-mob-18.leading-140.font-bold.mb-mob-20(class="sm:text-fs-30 sm:mb-fs-30") С заботой о каждом проекте и клиенте
+                        p.text-mob-12.leading-140(class="sm:text-fs-16") Благодаря более чем 10-летнему опыту, мы отлично разбираемся в водном транспорте, состоянии рынка и во всех процессах купли-продажи
+                .grid.grid-cols-1(class="sm:grid-cols-2 sm:pl-fs-20 sm:pr-fs-40")
+                    div.h-mob-212.w-full.overflow-hidden(class="sm:h-fs-450")
+                        img.lozad.object-cover.object-center.w-full.h-full(src="/assets/img/adv/adv_3.webp" data-src="/assets/img/adv/adv_3.webp" alt="")
+                    div.pt-mob-20(class="sm:pt-fs-40 sm:pl-fs-110")
+                        h3.uppercase.text-mob-18.leading-140.font-bold.mb-mob-20(class="sm:text-fs-30 sm:mb-fs-30") Решение нестандартных и не типовых задач
+                        p.text-mob-12.leading-140(class="sm:text-fs-16") Поможем вам купить или продать по самым выгодным ценам, и наслаждаться отдыхом и путешествиями на воде
+    include components/section_reviews.pug
+    include components/section_services.pug
+    include components/section_cta.pug
+    include components/section_info.pug
+    include components/section_prefooter.pug
 include components/footer.pug
