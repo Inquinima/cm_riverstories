@@ -1109,6 +1109,10 @@ ul.bullets li.slick-active button {
   margin-bottom: 5.833vw;
 }
 
+.mb-mob-25 {
+  margin-bottom: 6.944vw;
+}
+
 .mb-mob-30 {
   margin-bottom: 8.333vw;
 }
@@ -1123,6 +1127,14 @@ ul.bullets li.slick-active button {
 
 .mb-mob-4 {
   margin-bottom: 1.111vw;
+}
+
+.mb-mob-40 {
+  margin-bottom: 11.111vw;
+}
+
+.mb-mob-45 {
+  margin-bottom: 12.500vw;
 }
 
 .mb-mob-46 {
@@ -1175,10 +1187,6 @@ ul.bullets li.slick-active button {
 
 .mt-mob-40 {
   margin-top: 11.111vw;
-}
-
-.mb-mob-25 {
-  margin-bottom: 6.944vw;
 }
 
 .block {
@@ -1261,8 +1269,16 @@ ul.bullets li.slick-active button {
   height: 4.444vw;
 }
 
+.h-mob-176 {
+  height: 48.889vw;
+}
+
 .h-mob-20 {
   height: 5.556vw;
+}
+
+.h-mob-208 {
+  height: 57.778vw;
 }
 
 .h-mob-214 {
@@ -1678,6 +1694,10 @@ ul.bullets li.slick-active button {
   padding-bottom: 11.111vw;
 }
 
+.pb-mob-80 {
+  padding-bottom: 22.222vw;
+}
+
 .pl-mob-20 {
   padding-left: 5.556vw;
 }
@@ -1698,6 +1718,10 @@ ul.bullets li.slick-active button {
   padding-top: 3.889vw;
 }
 
+.pt-mob-16 {
+  padding-top: 4.444vw;
+}
+
 .pt-mob-20 {
   padding-top: 5.556vw;
 }
@@ -1706,8 +1730,16 @@ ul.bullets li.slick-active button {
   padding-top: 61.111vw;
 }
 
+.pt-mob-35 {
+  padding-top: 9.722vw;
+}
+
 .pt-mob-40 {
   padding-top: 11.111vw;
+}
+
+.pt-mob-80 {
+  padding-top: 22.222vw;
 }
 
 .text-center {
@@ -1829,10 +1861,6 @@ ul.bullets li.slick-active button {
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-}
-
-.underline-offset-4 {
-  text-underline-offset: 4px;
 }
 
 .underline-offset-mob-4 {
@@ -2762,6 +2790,10 @@ body {
     margin-bottom: 4.167vw;
   }
 
+  .sm\:ml-fs-155 {
+    margin-left: 8.073vw;
+  }
+
   .sm\:ml-fs-55 {
     margin-left: 2.865vw;
   }
@@ -2792,6 +2824,10 @@ body {
 
   .sm\:mt-fs-106 {
     margin-top: 5.521vw;
+  }
+
+  .sm\:mt-fs-40 {
+    margin-top: 2.083vw;
   }
 
   .sm\:mt-fs-50 {
@@ -2862,8 +2898,16 @@ body {
     height: 20.313vw;
   }
 
+  .sm\:h-fs-432 {
+    height: 22.500vw;
+  }
+
   .sm\:h-fs-440 {
     height: 22.917vw;
+  }
+
+  .sm\:h-fs-494 {
+    height: 25.729vw;
   }
 
   .sm\:h-fs-50 {
@@ -2920,8 +2964,16 @@ body {
     width: 20.052vw;
   }
 
+  .sm\:w-fs-455 {
+    width: 23.698vw;
+  }
+
   .sm\:w-fs-50 {
     width: 2.604vw;
+  }
+
+  .sm\:w-fs-585 {
+    width: 30.469vw;
   }
 
   .sm\:w-fs-905 {
@@ -2994,6 +3046,11 @@ body {
          column-gap: 1.042vw;
   }
 
+  .sm\:gap-x-fs-25 {
+    -moz-column-gap: 1.302vw;
+         column-gap: 1.302vw;
+  }
+
   .sm\:gap-x-fs-30 {
     -moz-column-gap: 1.563vw;
          column-gap: 1.563vw;
@@ -3017,12 +3074,20 @@ body {
     row-gap: 0.052vw;
   }
 
+  .sm\:gap-y-fs-120 {
+    row-gap: 6.250vw;
+  }
+
   .sm\:gap-y-fs-40 {
     row-gap: 2.083vw;
   }
 
   .sm\:gap-y-fs-8 {
     row-gap: 0.417vw;
+  }
+
+  .sm\:self-end {
+    align-self: flex-end;
   }
 
   .sm\:border-fs-1 {
@@ -3152,6 +3217,10 @@ body {
     padding-bottom: 0px;
   }
 
+  .sm\:pb-fs-100 {
+    padding-bottom: 5.208vw;
+  }
+
   .sm\:pb-fs-147 {
     padding-bottom: 7.656vw;
   }
@@ -3174,6 +3243,10 @@ body {
 
   .sm\:pb-fs-38 {
     padding-bottom: 1.979vw;
+  }
+
+  .sm\:pb-fs-40 {
+    padding-bottom: 2.083vw;
   }
 
   .sm\:pb-fs-80 {
@@ -3200,12 +3273,24 @@ body {
     padding-left: 4.167vw;
   }
 
+  .sm\:pl-fs-90 {
+    padding-left: 4.688vw;
+  }
+
+  .sm\:pr-0 {
+    padding-right: 0px;
+  }
+
   .sm\:pr-fs-120 {
     padding-right: 6.250vw;
   }
 
   .sm\:pr-fs-147 {
     padding-right: 7.656vw;
+  }
+
+  .sm\:pr-fs-155 {
+    padding-right: 8.073vw;
   }
 
   .sm\:pr-fs-285 {
@@ -3232,6 +3317,10 @@ body {
     padding-right: 4.167vw;
   }
 
+  .sm\:pt-0 {
+    padding-top: 0px;
+  }
+
   .sm\:pt-fs-100 {
     padding-top: 5.208vw;
   }
@@ -3242,6 +3331,10 @@ body {
 
   .sm\:pt-fs-20 {
     padding-top: 1.042vw;
+  }
+
+  .sm\:pt-fs-32 {
+    padding-top: 1.667vw;
   }
 
   .sm\:pt-fs-36 {
@@ -3260,8 +3353,8 @@ body {
     padding-top: 4.688vw;
   }
 
-  .sm\:pb-fs-40 {
-    padding-bottom: 2.083vw;
+  .sm\:pl-fs-100 {
+    padding-left: 5.208vw;
   }
 
   .sm\:text-left {
@@ -3286,6 +3379,10 @@ body {
 
   .sm\:text-fs-18 {
     font-size: 0.938vw;
+  }
+
+  .sm\:text-fs-20 {
+    font-size: 1.042vw;
   }
 
   .sm\:text-fs-22 {

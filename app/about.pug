@@ -1,3 +1,33 @@
 include components/header.pug
+include components/breadcrumbs.pug
 main.main
+    section.section.pt-mob-16(class="sm:pt-fs-32")
+        .inner.grid.grid-cols-1(class="sm:grid-cols-2 sm:gap-y-fs-120 sm:gap-x-fs-40")
+            h1.text-mob-30.leading-140.uppercase.font-bold.mb-mob-20(class="sm:text-fs-40 sm:pr-fs-155 sm:mb-0") <span class="text-rs-accent">RIVERSTORIES —</span><br> Симбиоз отдыха, путешествий, природы и крутого сервиса 
+            p.leading-160.text-mob-12.mb-mob-40(class="sm:ml-fs-155 sm:text-fs-16 sm:mb-0 sm:self-end sm:w-fs-455") Ваши персональные эксперты в сфере лодок и катеров
+            div.w-full.h-mob-176.mb-mob-45(class="sm:h-fs-494 sm:mb-0")
+                img.lozad.w-full.h-full.object-cover.object-center(src="/assets/img/floating.webp" data-src="/assets/img/floating.webp" alt="")
+            .border-b-black.border-b-mob-1.mb-mob-45.w-full(class="sm:ml-fs-155 sm:w-fs-585 sm:px-0 sm:border-r-black sm:border-r-fs-1 sm:border-b-0 sm:mb-0 sm:flex sm:flex-col sm:justify-between")
+                div
+                    h2.leading-140.text-mob-16.font-bold.uppercase(class="sm:text-fs-20") Команда riverstories занимается приобретением, продажей, обслуживанием и тюнингом лодок и катеров. 
+                    .grid.grid-cols-2.gap-x-mob-20.gap-y-mob-30.mt-mob-40.mb-mob-36(class="sm:mt-fs-40 sm:grid-cols-3 sm:gap-y-0 sm:gap-x-fs-25 sm:mb-0")
+                        div 
+                            span.block.font-bold.mb-mob-15.text-mob-36.text-rs-accent(class="sm:mb-fs-15 sm:text-fs-30") 10+
+                            span.block.uppercase.font-bold.text-mob-11.leading-140(class="sm:text-fs-13") особый подход <br> к сотрудничеству <br> более 10 лет
+                        div 
+                            span.block.font-bold.mb-mob-15.text-mob-36.text-rs-accent(class="sm:mb-fs-15 sm:text-fs-30") 107+
+                            span.block.uppercase.font-bold.text-mob-11.leading-140(class="sm:text-fs-13") довольных <br> клиентов
+                        div 
+                            span.block.font-bold.mb-mob-15.text-mob-36.text-rs-accent(class="sm:mb-fs-15 sm:text-fs-30") 12
+                            span.block.uppercase.font-bold.text-mob-11.leading-140(class="sm:text-fs-13") Специалистов <br> В штате
+                a.button.inline-block.text-center.w-full.text-mob-14.leading-140(class="sm:w-fit sm:text-fs-16" href="#HREF_POPUP") Пообщаться <br class="inline sm:hidden"> со специалистом
+        .grid.grid-cols-1.pb-mob-80.pt-mob-35(class="sm:grid-cols-4 sm:gap-x-fs-40 sm:pb-fs-100 sm:pt-0")
+            h3.px-mob-20.uppercase.text-mob-18.leading-140.font-bold.mb-mob-20(class="sm:text-fs-30 sm:self-end sm:pl-fs-40 sm:pr-0 sm:mb-0") С вами работает опытная и талантливая команда профессионалов разных сфер. 
+            p.px-mob-20.leading-140.text-mob-12(class="sm:text-fs-14 sm:pr-0 sm:pl-fs-100 sm:self-end") Это значит, что вы можете полностью доверить нам задачи по подбору и обслуживанию катеров. Мы готовы предложитьиндивидуальные, смелые и функциональные решения для каждого клиента. 
+            div.w-full.h-mob-208.overflow-hidden(class="sm:h-fs-432 sm:col-span-2")
+                img.lozad.w-full.hidden(class="sm:block" src="/assets/img/boat_reverse.webp" data-src="/assets/img/boat_reverse.webp" alt="Лодка же")
+                img.lozad.w-full.block(class="sm:hidden" src="/assets/img/boat_reverse_mob.webp" data-src="/assets/img/boat_reverse_mob.webp" alt="Лодка же")
+    include components/section_services.pug
+    include components/section_partners.pug
+    include components/section_prefooter.pug
 include components/footer.pug

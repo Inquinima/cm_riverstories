@@ -148,28 +148,5 @@ main.main
                                 span.catalog__item-price.--new $949
                                 span.catalog__item-price.--old $1000
                             .arrow
-    section.section.pt-mob-40(class="sm:pt-fs-80")
-        h2.inner.text-mob-18.uppercase.leading-140.mb-mob-34.font-bold(class="sm:text-fs-30 sm:mb-fs-60") Ждем ваших обращений
-        .inner.grid.gric-cols-1.gap-y-mob-40(class="sm:gap-y-0 sm:grid-cols-3 sm:pb-fs-40 sm:border-b-fs-1 sm:border-b-rs-gray")
-            div
-                span.block.text-mob-12.leading-140.mb-mob-10(class="sm:text-fs-14 sm:mb-fs-26 text-white/50") Телефон:
-                div.flex.flex-row.items-center.mb-mob-25(class="sm:mb-fs-30")
-                    a.text-mob-14.font-bold.mr-mob-30(href="tel:HREF_TEL" class="sm:text-fs-30 sm:mr-fs-30") +7 (499) 000-00-00
-                    div.flex.flex-row.items-center.gap-x-mob-14(class="sm:gap-x-fs-14")
-                        a(href="HREF_WHATSAPP")
-                            img.lozad.w-mob-20.h-mob-20(class="sm:w-fs-20 sm:h-fs-20" src="/assets/img/wa_accent.svg" data-src="/assets/img/wa_accent.svg" alt="WhatsApp")
-                        a(href="HREF_TELEGRAM")
-                            img.lozad.w-mob-20.h-mob-16(class="sm:w-fs-20 sm:h-fs-20" src="/assets/img/tg_accent.svg" data-src="/assets/img/tg_accent.svg" alt="Telegram")
-                a.button.--small(href="HREF_POPUP") перезвоните мне
-            div
-                span.block.text-mob-12.leading-140.mb-mob-10(class="sm:text-fs-14 sm:mb-fs-26 text-white/50") E-mail:
-                a.font-bold.text-mob-14.leading-160.underline.underline-offset-mob-4(href="mailto:name-email@mail.com" class="sm:text-fs-22 sm:underline-offset-fs-4") name-email@mail.com
-            div
-                span.block.text-mob-12.leading-140.mb-mob-10(class="sm:text-fs-14 sm:mb-fs-26 text-white/50") Адрес:
-                span.font-bold.text-mob-14.leading-160(class="sm:text-fs-18") Долгопрудный, <br> улица Уличных улиц, дом 15
-        <div class="inner mt-mob-40 sm:mt-fs-50" style="position:relative;overflow:hidden;">
-            <a href="https://yandex.com/maps/10131/chicago/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Чикаго</a>
-            <a href="https://yandex.com/maps/10131/chicago/?ll=-87.621499%2C41.875177&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoyMjQwNTc0MzIwEkFVbml0ZWQgU3RhdGVzIG9mIEFtZXJpY2EsIFN0YXRlIG9mIElsbGlub2lzLCBDb29rIENvdW50eSwgQ2hpY2FnbyIKDV4_r8IVv4AnQg%2C%2C&utm_medium=mapframe&utm_source=maps&z=15.29" style="color:#eee;font-size:12px;position:absolute;top:14px;">Чикаго — Яндекс Карты</a>
-            <iframe class="lozad w-full h-[108.333vw] sm:h-fs-500" data-src="https://yandex.com/map-widget/v1/?ll=-87.621499%2C41.875177&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoyMjQwNTc0MzIwEkFVbml0ZWQgU3RhdGVzIG9mIEFtZXJpY2EsIFN0YXRlIG9mIElsbGlub2lzLCBDb29rIENvdW50eSwgQ2hpY2FnbyIKDV4_r8IVv4AnQg%2C%2C&z=15.29" style="position:relative;"></iframe>
-        </div>
+    include components/section_prefooter.pug
 include components/footer.pug
