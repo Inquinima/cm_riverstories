@@ -1,0 +1,175 @@
+include components/header.pug
+include components/breadcrumbs.pug
+main.main
+    section.section.catalog.pb-mob-40.border-b-mob-1.border-b-rs-gray(class="sm:border-b-fs-1 sm:pb-fs-80")
+        .inner
+            h1.page-title Каталог
+            .catalog__items.grid.grid-cols-1.gap-y-mob-20(class="sm:grid-cols-3 sm:gap-y-fs-40 sm:gap-x-fs-40")
+                a.catalog__item.group(href="#HREF_ITEM" class="bg-[#1D1D1D]")
+                    .catalog__item-image.w-full.h-mob-214(class="sm:h-fs-390")
+                        img.lozad.object-cover.object-center.h-full.w-full(src="/assets/img/catalog/boat_000/boat_000_preview.webp" data-src="/assets/img/catalog/boat_000/boat_000_preview.webp" alt="#")
+                    .catalog__item-info.font-bold.px-mob-20.pt-mob-20.pb-mob-30(class="sm:px-fs-20 sm:pt-fs-20 sm:pb-fs-30")
+                        .catalog__item-top.pb-mob-18(class="sm:pb-fs-20")
+                            .catalog__item-qty.--positive.flex.flex-row.items-center.gap-x-mob-8.mb-mob-8(class="sm:gap-x-fs-8 sm:mb-fs-8")
+                                img.lozad.w-mob-12.h-mob-12(class="sm:w-fs-12 sm:h-fs-12" src="/assets/img/checkmark.svg" data-src="/assets/img/checkmark.svg" alt="Галка")
+                                span.font-normal.text-mob-12(class="sm:text-fs-13") Есть в наличии
+                            h3.catalog__item-title.underline.uppercase.text-mob-14(class="sm:text-fs-18") Admiral Regale 42 RPH
+                        .catalog__item-main.flex.flex-col.gap-y-mob-15.py-mob-18.border-y-rs-gray.border-y-mob-1(class="sm:border-y-fs-1 sm:gap-y-fs-8 sm:pt-fs-20 sm:pb-fs-25")
+                            div.grid.grid-cols-1.text-mob-12(class="sm:grid-cols-2 sm:text-fs-13 sm:gap-x-fs-40")
+                                span.catalog__item-attr.leading-140.mb-mob-4(class="sm:mb-0") макс. мощность мотора:
+                                span.catalog__item-value.text-rs-accent 90 л/с
+                            div.grid.grid-cols-1.text-mob-12(class="sm:grid-cols-2 sm:text-fs-13 sm:gap-x-fs-40")
+                                span.catalog__item-attr.leading-140.mb-mob-4(class="sm:mb-0") пассажировместимость:
+                                span.catalog__item-value.text-rs-accent 5 человек
+                            div.grid.grid-cols-1.text-mob-12(class="sm:grid-cols-2 sm:text-fs-13 sm:gap-x-fs-40")
+                                span.catalog__item-attr.leading-140.mb-mob-4(class="sm:mb-0") длина:
+                                span.catalog__item-value.text-rs-accent 4,60 м
+                        .catalog__item-bottom.flex.flex-row.items-center.justify-between.pt-mob-14(class="sm:pt-fs-18")
+                            .catalog__item-prices.text-mob-18(class="sm:text-fs-22")
+                                span.catalog__item-price.--new $949
+                                span.catalog__item-price.--old $1000
+                            .arrow
+                a.catalog__item.group(href="#HREF_ITEM" class="bg-[#1D1D1D]")
+                    .catalog__item-image.w-full.h-mob-214(class="sm:h-fs-390")
+                        img.lozad.object-cover.object-center.h-full.w-full(src="/assets/img/catalog/boat_000/boat_000_preview.webp" data-src="/assets/img/catalog/boat_000/boat_000_preview.webp" alt="#")
+                    .catalog__item-info.font-bold.px-mob-20.pt-mob-20.pb-mob-30(class="sm:px-fs-20 sm:pt-fs-20 sm:pb-fs-30")
+                        .catalog__item-top.pb-mob-18(class="sm:pb-fs-20")
+                            .catalog__item-qty.--negative.flex.flex-row.items-center.gap-x-mob-8.mb-mob-8(class="sm:gap-x-fs-8 sm:mb-fs-8")
+                                img.lozad.w-mob-12.h-mob-12(class="sm:w-fs-12 sm:h-fs-12" src="/assets/img/checkmark.svg" data-src="/assets/img/cross.svg" alt="Крест")
+                                span.font-normal.text-mob-12(class="sm:text-fs-13") Нет в наличии
+                            h3.catalog__item-title.underline.uppercase.text-mob-14(class="sm:text-fs-18") Admiral Regale 42 RPH
+                        .catalog__item-main.flex.flex-col.gap-y-mob-15.py-mob-18.border-y-rs-gray.border-y-mob-1(class="sm:border-y-fs-1 sm:gap-y-fs-8 sm:pt-fs-20 sm:pb-fs-25")
+                            div.grid.grid-cols-1.text-mob-12(class="sm:grid-cols-2 sm:text-fs-13 sm:gap-x-fs-40")
+                                span.catalog__item-attr.leading-140.mb-mob-4(class="sm:mb-0") макс. мощность мотора:
+                                span.catalog__item-value.text-rs-accent 90 л/с
+                            div.grid.grid-cols-1.text-mob-12(class="sm:grid-cols-2 sm:text-fs-13 sm:gap-x-fs-40")
+                                span.catalog__item-attr.leading-140.mb-mob-4(class="sm:mb-0") пассажировместимость:
+                                span.catalog__item-value.text-rs-accent 5 человек
+                            div.grid.grid-cols-1.text-mob-12(class="sm:grid-cols-2 sm:text-fs-13 sm:gap-x-fs-40")
+                                span.catalog__item-attr.leading-140.mb-mob-4(class="sm:mb-0") длина:
+                                span.catalog__item-value.text-rs-accent 4,60 м
+                        .catalog__item-bottom.flex.flex-row.items-center.justify-between.pt-mob-14(class="sm:pt-fs-18")
+                            .catalog__item-prices.text-mob-18(class="sm:text-fs-22")
+                                span.catalog__item-price $1000
+                            .arrow
+                a.catalog__item.group(href="#HREF_ITEM" class="bg-[#1D1D1D]")
+                    .catalog__item-image.w-full.h-mob-214(class="sm:h-fs-390")
+                        img.lozad.object-cover.object-center.h-full.w-full(src="/assets/img/catalog/boat_000/boat_000_preview.webp" data-src="/assets/img/catalog/boat_000/boat_000_preview.webp" alt="#")
+                    .catalog__item-info.font-bold.px-mob-20.pt-mob-20.pb-mob-30(class="sm:px-fs-20 sm:pt-fs-20 sm:pb-fs-30")
+                        .catalog__item-top.pb-mob-18(class="sm:pb-fs-20")
+                            .catalog__item-qty.--positive.flex.flex-row.items-center.gap-x-mob-8.mb-mob-8(class="sm:gap-x-fs-8 sm:mb-fs-8")
+                                img.lozad.w-mob-12.h-mob-12(class="sm:w-fs-12 sm:h-fs-12" src="/assets/img/checkmark.svg" data-src="/assets/img/checkmark.svg" alt="Галка")
+                                span.font-normal.text-mob-12(class="sm:text-fs-13") Есть в наличии
+                            h3.catalog__item-title.underline.uppercase.text-mob-14(class="sm:text-fs-18") Admiral Regale 42 RPH
+                        .catalog__item-main.flex.flex-col.gap-y-mob-15.py-mob-18.border-y-rs-gray.border-y-mob-1(class="sm:border-y-fs-1 sm:gap-y-fs-8 sm:pt-fs-20 sm:pb-fs-25")
+                            div.grid.grid-cols-1.text-mob-12(class="sm:grid-cols-2 sm:text-fs-13 sm:gap-x-fs-40")
+                                span.catalog__item-attr.leading-140.mb-mob-4(class="sm:mb-0") макс. мощность мотора:
+                                span.catalog__item-value.text-rs-accent 90 л/с
+                            div.grid.grid-cols-1.text-mob-12(class="sm:grid-cols-2 sm:text-fs-13 sm:gap-x-fs-40")
+                                span.catalog__item-attr.leading-140.mb-mob-4(class="sm:mb-0") пассажировместимость:
+                                span.catalog__item-value.text-rs-accent 5 человек
+                            div.grid.grid-cols-1.text-mob-12(class="sm:grid-cols-2 sm:text-fs-13 sm:gap-x-fs-40")
+                                span.catalog__item-attr.leading-140.mb-mob-4(class="sm:mb-0") длина:
+                                span.catalog__item-value.text-rs-accent 4,60 м
+                        .catalog__item-bottom.flex.flex-row.items-center.justify-between.pt-mob-14(class="sm:pt-fs-18")
+                            .catalog__item-prices.text-mob-18(class="sm:text-fs-22")
+                                span.catalog__item-price.--new $949
+                                span.catalog__item-price.--old $1000
+                            .arrow
+                a.catalog__item.group(href="#HREF_ITEM" class="bg-[#1D1D1D]")
+                    .catalog__item-image.w-full.h-mob-214(class="sm:h-fs-390")
+                        img.lozad.object-cover.object-center.h-full.w-full(src="/assets/img/catalog/boat_000/boat_000_preview.webp" data-src="/assets/img/catalog/boat_000/boat_000_preview.webp" alt="#")
+                    .catalog__item-info.font-bold.px-mob-20.pt-mob-20.pb-mob-30(class="sm:px-fs-20 sm:pt-fs-20 sm:pb-fs-30")
+                        .catalog__item-top.pb-mob-18(class="sm:pb-fs-20")
+                            .catalog__item-qty.--positive.flex.flex-row.items-center.gap-x-mob-8.mb-mob-8(class="sm:gap-x-fs-8 sm:mb-fs-8")
+                                img.lozad.w-mob-12.h-mob-12(class="sm:w-fs-12 sm:h-fs-12" src="/assets/img/checkmark.svg" data-src="/assets/img/checkmark.svg" alt="Галка")
+                                span.font-normal.text-mob-12(class="sm:text-fs-13") Есть в наличии
+                            h3.catalog__item-title.underline.uppercase.text-mob-14(class="sm:text-fs-18") Admiral Regale 42 RPH
+                        .catalog__item-main.flex.flex-col.gap-y-mob-15.py-mob-18.border-y-rs-gray.border-y-mob-1(class="sm:border-y-fs-1 sm:gap-y-fs-8 sm:pt-fs-20 sm:pb-fs-25")
+                            div.grid.grid-cols-1.text-mob-12(class="sm:grid-cols-2 sm:text-fs-13 sm:gap-x-fs-40")
+                                span.catalog__item-attr.leading-140.mb-mob-4(class="sm:mb-0") макс. мощность мотора:
+                                span.catalog__item-value.text-rs-accent 90 л/с
+                            div.grid.grid-cols-1.text-mob-12(class="sm:grid-cols-2 sm:text-fs-13 sm:gap-x-fs-40")
+                                span.catalog__item-attr.leading-140.mb-mob-4(class="sm:mb-0") пассажировместимость:
+                                span.catalog__item-value.text-rs-accent 5 человек
+                            div.grid.grid-cols-1.text-mob-12(class="sm:grid-cols-2 sm:text-fs-13 sm:gap-x-fs-40")
+                                span.catalog__item-attr.leading-140.mb-mob-4(class="sm:mb-0") длина:
+                                span.catalog__item-value.text-rs-accent 4,60 м
+                        .catalog__item-bottom.flex.flex-row.items-center.justify-between.pt-mob-14(class="sm:pt-fs-18")
+                            .catalog__item-prices.text-mob-18(class="sm:text-fs-22")
+                                span.catalog__item-price.--new $949
+                                span.catalog__item-price.--old $1000
+                            .arrow
+                a.catalog__item.group(href="#HREF_ITEM" class="bg-[#1D1D1D]")
+                    .catalog__item-image.w-full.h-mob-214(class="sm:h-fs-390")
+                        img.lozad.object-cover.object-center.h-full.w-full(src="/assets/img/catalog/boat_000/boat_000_preview.webp" data-src="/assets/img/catalog/boat_000/boat_000_preview.webp" alt="#")
+                    .catalog__item-info.font-bold.px-mob-20.pt-mob-20.pb-mob-30(class="sm:px-fs-20 sm:pt-fs-20 sm:pb-fs-30")
+                        .catalog__item-top.pb-mob-18(class="sm:pb-fs-20")
+                            .catalog__item-qty.--positive.flex.flex-row.items-center.gap-x-mob-8.mb-mob-8(class="sm:gap-x-fs-8 sm:mb-fs-8")
+                                img.lozad.w-mob-12.h-mob-12(class="sm:w-fs-12 sm:h-fs-12" src="/assets/img/checkmark.svg" data-src="/assets/img/checkmark.svg" alt="Галка")
+                                span.font-normal.text-mob-12(class="sm:text-fs-13") Есть в наличии
+                            h3.catalog__item-title.underline.uppercase.text-mob-14(class="sm:text-fs-18") Admiral Regale 42 RPH
+                        .catalog__item-main.flex.flex-col.gap-y-mob-15.py-mob-18.border-y-rs-gray.border-y-mob-1(class="sm:border-y-fs-1 sm:gap-y-fs-8 sm:pt-fs-20 sm:pb-fs-25")
+                            div.grid.grid-cols-1.text-mob-12(class="sm:grid-cols-2 sm:text-fs-13 sm:gap-x-fs-40")
+                                span.catalog__item-attr.leading-140.mb-mob-4(class="sm:mb-0") макс. мощность мотора:
+                                span.catalog__item-value.text-rs-accent 90 л/с
+                            div.grid.grid-cols-1.text-mob-12(class="sm:grid-cols-2 sm:text-fs-13 sm:gap-x-fs-40")
+                                span.catalog__item-attr.leading-140.mb-mob-4(class="sm:mb-0") пассажировместимость:
+                                span.catalog__item-value.text-rs-accent 5 человек
+                            div.grid.grid-cols-1.text-mob-12(class="sm:grid-cols-2 sm:text-fs-13 sm:gap-x-fs-40")
+                                span.catalog__item-attr.leading-140.mb-mob-4(class="sm:mb-0") длина:
+                                span.catalog__item-value.text-rs-accent 4,60 м
+                        .catalog__item-bottom.flex.flex-row.items-center.justify-between.pt-mob-14(class="sm:pt-fs-18")
+                            .catalog__item-prices.text-mob-18(class="sm:text-fs-22")
+                                span.catalog__item-price.--new $949
+                                span.catalog__item-price.--old $1000
+                            .arrow
+                a.catalog__item.group(href="#HREF_ITEM" class="bg-[#1D1D1D]")
+                    .catalog__item-image.w-full.h-mob-214(class="sm:h-fs-390")
+                        img.lozad.object-cover.object-center.h-full.w-full(src="/assets/img/catalog/boat_000/boat_000_preview.webp" data-src="/assets/img/catalog/boat_000/boat_000_preview.webp" alt="#")
+                    .catalog__item-info.font-bold.px-mob-20.pt-mob-20.pb-mob-30(class="sm:px-fs-20 sm:pt-fs-20 sm:pb-fs-30")
+                        .catalog__item-top.pb-mob-18(class="sm:pb-fs-20")
+                            .catalog__item-qty.--positive.flex.flex-row.items-center.gap-x-mob-8.mb-mob-8(class="sm:gap-x-fs-8 sm:mb-fs-8")
+                                img.lozad.w-mob-12.h-mob-12(class="sm:w-fs-12 sm:h-fs-12" src="/assets/img/checkmark.svg" data-src="/assets/img/checkmark.svg" alt="Галка")
+                                span.font-normal.text-mob-12(class="sm:text-fs-13") Есть в наличии
+                            h3.catalog__item-title.underline.uppercase.text-mob-14(class="sm:text-fs-18") Admiral Regale 42 RPH
+                        .catalog__item-main.flex.flex-col.gap-y-mob-15.py-mob-18.border-y-rs-gray.border-y-mob-1(class="sm:border-y-fs-1 sm:gap-y-fs-8 sm:pt-fs-20 sm:pb-fs-25")
+                            div.grid.grid-cols-1.text-mob-12(class="sm:grid-cols-2 sm:text-fs-13 sm:gap-x-fs-40")
+                                span.catalog__item-attr.leading-140.mb-mob-4(class="sm:mb-0") макс. мощность мотора:
+                                span.catalog__item-value.text-rs-accent 90 л/с
+                            div.grid.grid-cols-1.text-mob-12(class="sm:grid-cols-2 sm:text-fs-13 sm:gap-x-fs-40")
+                                span.catalog__item-attr.leading-140.mb-mob-4(class="sm:mb-0") пассажировместимость:
+                                span.catalog__item-value.text-rs-accent 5 человек
+                            div.grid.grid-cols-1.text-mob-12(class="sm:grid-cols-2 sm:text-fs-13 sm:gap-x-fs-40")
+                                span.catalog__item-attr.leading-140.mb-mob-4(class="sm:mb-0") длина:
+                                span.catalog__item-value.text-rs-accent 4,60 м
+                        .catalog__item-bottom.flex.flex-row.items-center.justify-between.pt-mob-14(class="sm:pt-fs-18")
+                            .catalog__item-prices.text-mob-18(class="sm:text-fs-22")
+                                span.catalog__item-price.--new $949
+                                span.catalog__item-price.--old $1000
+                            .arrow
+    section.section.pt-mob-40(class="sm:pt-fs-80")
+        h2.inner.text-mob-18.uppercase.leading-140.mb-mob-34.font-bold(class="sm:text-fs-30 sm:mb-fs-60") Ждем ваших обращений
+        .inner.grid.gric-cols-1.gap-y-mob-40(class="sm:gap-y-0 sm:grid-cols-3 sm:pb-fs-40 sm:border-b-fs-1 sm:border-b-rs-gray")
+            div
+                span.block.text-mob-12.leading-140.mb-mob-10(class="sm:text-fs-14 sm:mb-fs-26 text-white/50") Телефон:
+                div.flex.flex-row.items-center.mb-mob-25(class="sm:mb-fs-30")
+                    a.text-mob-14.font-bold.mr-mob-30(href="tel:HREF_TEL" class="sm:text-fs-30 sm:mr-fs-30") +7 (499) 000-00-00
+                    div.flex.flex-row.items-center.gap-x-mob-14(class="sm:gap-x-fs-14")
+                        a(href="HREF_WHATSAPP")
+                            img.lozad.w-mob-20.h-mob-20(class="sm:w-fs-20 sm:h-fs-20" src="/assets/img/wa_accent.svg" data-src="/assets/img/wa_accent.svg" alt="WhatsApp")
+                        a(href="HREF_TELEGRAM")
+                            img.lozad.w-mob-20.h-mob-16(class="sm:w-fs-20 sm:h-fs-20" src="/assets/img/tg_accent.svg" data-src="/assets/img/tg_accent.svg" alt="Telegram")
+                a.button.--small(href="HREF_POPUP") перезвоните мне
+            div
+                span.block.text-mob-12.leading-140.mb-mob-10(class="sm:text-fs-14 sm:mb-fs-26 text-white/50") E-mail:
+                a.font-bold.text-mob-14.leading-160.underline.underline-offset-mob-4(href="mailto:name-email@mail.com" class="sm:text-fs-22 sm:underline-offset-fs-4") name-email@mail.com
+            div
+                span.block.text-mob-12.leading-140.mb-mob-10(class="sm:text-fs-14 sm:mb-fs-26 text-white/50") Адрес:
+                span.font-bold.text-mob-14.leading-160(class="sm:text-fs-18") Долгопрудный, <br> улица Уличных улиц, дом 15
+        <div class="inner mt-mob-40 sm:mt-fs-50" style="position:relative;overflow:hidden;">
+            <a href="https://yandex.com/maps/10131/chicago/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Чикаго</a>
+            <a href="https://yandex.com/maps/10131/chicago/?ll=-87.621499%2C41.875177&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoyMjQwNTc0MzIwEkFVbml0ZWQgU3RhdGVzIG9mIEFtZXJpY2EsIFN0YXRlIG9mIElsbGlub2lzLCBDb29rIENvdW50eSwgQ2hpY2FnbyIKDV4_r8IVv4AnQg%2C%2C&utm_medium=mapframe&utm_source=maps&z=15.29" style="color:#eee;font-size:12px;position:absolute;top:14px;">Чикаго — Яндекс Карты</a>
+            <iframe class="lozad w-full h-[108.333vw] sm:h-fs-500" data-src="https://yandex.com/map-widget/v1/?ll=-87.621499%2C41.875177&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoyMjQwNTc0MzIwEkFVbml0ZWQgU3RhdGVzIG9mIEFtZXJpY2EsIFN0YXRlIG9mIElsbGlub2lzLCBDb29rIENvdW50eSwgQ2hpY2FnbyIKDV4_r8IVv4AnQg%2C%2C&z=15.29" style="position:relative;"></iframe>
+        </div>
+include components/footer.pug

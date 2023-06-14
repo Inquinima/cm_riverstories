@@ -919,9 +919,19 @@ module.exports = {
       borderWidth:{
         'mob-1':'0.278vw',
         'mob-2':'0.556vw',
+        'mob-4':'1.111vw',
+        'mob-5':'1.389vw',
+        'mob-9':'2.500vw',
         'fs-1':'0.052vw',
         'fs-2':'0.104vw',
-      }
+        'fs-4':'0.208vw',
+        'fs-5':'0.260vw',
+        'fs-9':'0.469vw',
+      },
+      textUnderlineOffset:{
+        'mob-4':'1.111vw',
+        'fs-4':'0.208vw',
+      },
     },
   },
   plugins: [],

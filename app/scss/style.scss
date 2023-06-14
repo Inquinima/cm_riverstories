@@ -30,11 +30,37 @@
     // .reviews__items .slick-list{
     //     @apply 
     // }
+    .catalog__item-qty.--positive span{
+        @apply text-rs-accent
+    }
+    .catalog__item-qty.--negative span{
+        @apply text-rs-error
+    }
+    .catalog__item-price.--new{
+        @apply text-rs-error mr-mob-30 sm:mr-fs-30
+    }
+    .catalog__item-price.--old{
+        @apply line-through
+    }
+    .page-title{
+        @apply uppercase text-mob-30 leading-110 font-bold sm:text-fs-60 mb-mob-34 sm:mb-fs-65
+    }
+
+    .crumb:not(:last-child){
+        @apply relative after:absolute after:content-[''] after:block after:border-r-0 after:border-t-mob-4 after:border-b-mob-4 after:border-l-mob-5  sm:after:border-t-fs-4 sm:after:border-b-fs-4 sm:after:border-l-fs-5 after:border-t-transparent after:border-b-transparent after:border-r-transparent after:border-l-rs-accent after:-right-mob-17 sm:after:-right-fs-25 after:top-1/2 after:-translate-y-1/2 duration-200 transition-colors hover:text-rs-accent
+    }
+    .crumb:last-child{
+        @apply text-white/50
+    }
 }
 
 @layer components{
     .body{
         @apply relative bg-black;
+    }
+
+    .breadcrumbs{
+        @apply flex flex-row gap-x-mob-30 sm:gap-x-fs-45 mt-mob-20 sm:mt-fs-30 mb-mob-20 sm:mb-fs-40 whitespace-nowrap overflow-hidden
     }
 
     .button{
