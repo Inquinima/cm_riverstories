@@ -72,7 +72,7 @@ $('.cases__items').slick({
                     infinite: true,
                 }
             }]
-    });
+});
 
     $('.reviews__items').slick({
         arrows: false,
@@ -93,6 +93,51 @@ $('.cases__items').slick({
                 }
             }]
     });
+
+
+    $('.card-slider.--mobile').slick({
+        variableWidth: true,
+        arrows: false,
+        centerMode: true,
+        // infinite: true,
+        centerMode: true,
+        dots: false,
+    });
+
+    $('.card-slider.--desktop').slick({
+        variableWidth: true,
+        arrows: true,
+        centerMode: true,
+        infinite: true,
+        dots: false,
+        prevArrow: $('.card__gallery.--desktop .card-prev'),
+        nextArrow: $('.card__gallery.--desktop .card-next'),
+    });
+
+    $('.card__info-screens').slick({
+        arrows: false,
+        fade:true,
+        dots: false,
+    });
+    $('.card__info-button.--descr').on('click', function(){
+        $('.card__info-screens').slick('slickGoTo', 0);
+    });
+    $('.card__info-button.--attrs').on('click', function(){
+        $('.card__info-screens').slick('slickGoTo', 1);
+    });
+    $('.card__info-screens').on('beforeChange', function(){
+        console.log($('.card__info-screens').slick('slickCurrentSlide'));
+        if($(this).slick('slickCurrentSlide') == 1){
+            $('.card__info-button.--descr').addClass('--active');
+            $('.card__info-button.--attrs').removeClass('--active');
+
+        }
+        if($(this).slick('slickCurrentSlide') == 0){
+            $('.card__info-button.--attrs').addClass('--active');
+            $('.card__info-button.--descr').removeClass('--active');
+        }
+    });
+
 
 // $('.slider-button-area-prev').on('click', function(){
 //     $('.slider').slick('slickPrev');

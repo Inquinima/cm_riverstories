@@ -1,0 +1,141 @@
+include components/header.pug
+include components/breadcrumbs.pug
+main.main
+    section.section.card.inner.overflow-hidden
+        //- .inner.bg-white.text-black.grid.grid-cols-1(class="sm:grid-flow-row-dense sm:py-fs-40 sm:grid-cols-2 sm:max-h-[88.542vw]")
+        .card__content.overflow-hidden.inner.bg-white.text-black(class="sm:flex sm:flex-col sm:flex-wrap sm:py-fs-40 sm:max-h-[68.6vw]")
+            .card__image.overflow-hidden.w-mob-320.relative.h-mob-214.mb-mob-20.shrink-0(class="-left-mob-20 sm:static sm:w-fs-900 sm:h-fs-600 sm:mb-fs-40 sm:basis-auto sm:order-1")
+                img.lozad.w-full.h-full.object-fit.object-center(src="/assets/img/catalog/boat_000/card_1.webp" data-src="/assets/img/catalog/boat_000/card_1.webp" alt="Admiral Regale 42 RPH")
+            .card__general.shrink-0(class="sm:basis-auto sm:order-5 mb-mob-40 sm:mb-fs-30")
+                h1.card__title.uppercase.text-mob-18.font-bold.mb-mob-20(class="sm:text-fs-40 sm:mb-fs-20") Admiral Regale 42 RPH
+                div.flex.flex-row.items-center.gap-x-mob-16.mb-mob-20(class="sm:gap-x-fs-26 sm:mb-fs-40")
+                    .card__qty.--positive.flex.flex-row.items-center.gap-x-mob-8(class="sm:gap-x-fs-8")
+                        img.lozad.w-mob-18.h-mob-18(class="sm:w-fs-18 sm:h-fs-18" src="/assets/img/checkmark_black.svg" data-src="/assets/img/checkmark_black.svg" alt="Галка")
+                        span.text-mob-12(class="sm:text-fs-16") Есть в наличии
+                    div.w-mob-1.h-mob-14.border-r-mob-1.border-r-black(class="sm:w-fs-1 sm:h-fs-14 sm:border-r-fs-1")
+                    span.text-mob-12(class="sm:text-fs-16") Новый катер
+                ul.card__descr.mb-mob-30(class="sm:mb-fs-40")
+                    li.leading-140.text-mob-12(class="sm:text-fs-14") Открытый, быстроходный катер Название Производителя.
+                    li.leading-140.text-mob-12(class="sm:text-fs-14") Носовая часть отделена  трехсекционным ветровым стеклом
+                .card__prices.text-mob-18.font-bold.mb-mob-30(class="sm:text-fs-30 sm:mb-fs-40")
+                    span.card__price.--new $949
+                    span.card__price.--old.text-rs-gray $1000
+                a.button.--bigger.inline-block.w-full.text-center(class="sm:w-fit" href="HREF_POPUP") Приобрести
+            .card__characterstics.shrink-0(class="sm:basis-auto sm:order-2 sm:pb-fs-40 sm:w-fs-900")
+                p.text-mob-14.leading-160.font-bold.uppercase(class="sm:text-fs-18") Главные характеристики:
+                .grid.grid-cols-2.gap-x-mob-20.gap-y-mob-30.mt-mob-40.mb-mob-36(class="sm:mt-fs-40 sm:grid-cols-3 sm:gap-y-0 sm:gap-x-fs-25 sm:mb-0")
+                    div 
+                        span.block.font-bold.mb-mob-15.text-mob-36(class="sm:mb-fs-15 sm:text-fs-30") 5,60
+                        span.block.uppercase.font-bold.text-mob-11.leading-140(class="sm:text-fs-13") длина катера, метров
+                    div 
+                        span.block.font-bold.mb-mob-15.text-mob-36(class="sm:mb-fs-15 sm:text-fs-30") 115
+                        span.block.uppercase.font-bold.text-mob-11.leading-140(class="sm:text-fs-13") optimal мощность, Л/С
+                    div 
+                        span.block.font-bold.mb-mob-15.text-mob-36(class="sm:mb-fs-15 sm:text-fs-30") 5
+                        span.block.uppercase.font-bold.text-mob-11.leading-140(class="sm:text-fs-13") человек, вместимость
+            .card__info.shrink-0(class="sm:basis-auto sm:order-6 sm:w-fs-700")
+                div.flex.flex-row.items-center.gap-x-mob-20.border-b-mob-1.border-t-mob-1(class="sm:border-t-0 sm:gap-x-fs-60 sm:border-b-fs-1 border-t-black border-b-black")
+                    button.card__info-button.--descr.text-mob-12.border-b-mob-4.leading-140.font-bold.py-mob-23.uppercase.--active(class="sm:py-fs-25 sm:text-fs-18 sm:border-b-fs-5" type="button") Описание
+                    button.card__info-button.--attrs.text-mob-12.border-b-mob-4.leading-140.font-bold.py-mob-23.uppercase(class="sm:py-fs-25 sm:text-fs-18 sm:border-b-fs-5" type="button") Характеристики
+                .card__info-screens(class="mt-mob-20 sm:mt-fs-30")
+                    .card__info-screen.card__info-descr(class="sm:w-fs-700")
+                        p RIB — быстроходные лодки, состоящие из жесткого нескладного каркасообразующего дна и надувных многокамерных баллонов из ПВХ.
+
+                        p Жесткость каркаса позволяет придать днищу четкие обводы, что обеспечивает килеватости самый эффективный угол. Что обеспечивают этому типу лодок преимущество перед обычными ПВХ по остойчивости на воде, скорости, комфортности для пассажиров и способности выйти на глисс с меньшими усилиями.
+
+                        p Надувные борта позволяют RIBу пришвартоваться в любом месте, в отличие от лодки с жесткими бортами. Они состоят из нескольких надувных баллонов, что гарантирует практически полную непотопляемость плавсредства. Поэтому большинство спасательных операций и перехватов на море проходит с их участием. Их активно используют военные и спасатели.
+                    .card__info-screen.card__info-attrs
+                        ul.card__info-list.text-mob-12(class="sm:text-fs-13")
+                            li.grid.grid-cols-1(class="sm:grid-cols-2")
+                                span.font-bold Общая длина:
+                                span 4,60 м
+                            li.grid.grid-cols-1(class="sm:grid-cols-2")
+                                span.font-bold Ширина:
+                                span 2м
+                            li.grid.grid-cols-1(class="sm:grid-cols-2")
+                                span.font-bold Габаритная длина:
+                                span 5,40м
+                            li.grid.grid-cols-1(class="sm:grid-cols-2")
+                                span.font-bold Максимальная мощность мотора:
+                                span 90 л.с.
+                            li.grid.grid-cols-1(class="sm:grid-cols-2")
+                                span.font-bold Тип мотора:
+                                span подвесной
+                            li.grid.grid-cols-1(class="sm:grid-cols-2")
+                                span.font-bold Материал корпуса:
+                                span сталь (марка стали)
+                            li.grid.grid-cols-1(class="sm:grid-cols-2")
+                                span.font-bold Пассажировместимость:
+                                span 5
+                            li.grid.grid-cols-1(class="sm:grid-cols-2")
+                                span.font-bold Назначение:
+                                span для отдыха
+                            li.grid.grid-cols-1(class="sm:grid-cols-2")
+                                span.font-bold Высота транца:
+                                span 0,51
+                            li.grid.grid-cols-1(class="sm:grid-cols-2")
+                                span.font-bold Максимальная скорость:
+                                span 78 км/ч
+                            li.grid.grid-cols-1(class="sm:grid-cols-2")
+                                span.font-bold Максимальная масса мотора:
+                                span 185 кг
+                            li.grid.grid-cols-1(class="sm:grid-cols-2")
+                                span.font-bold Сухой вес:
+                                span 380 кг
+                            li.grid.grid-cols-1(class="sm:grid-cols-2")
+                                span.font-bold Запас топлива:
+                                span 100 л.
+                            li.grid.grid-cols-1(class="sm:grid-cols-2")
+                                span.font-bold Цвет:
+                                span Черный
+            .card__gallery.--mobile.overflow-hidden.shrink-0.mb-mob-40.pt-mob-40.border-t-fs-1.border-t-black(class="sm:hidden")
+                p.text-mob-14.leading-160.font-bold.uppercase.mb-mob-20 Фотогалерея
+                .card-slider.--mobile.h-mob-188
+                    div.overflow-hidden.h-mob-188.w-mob-279
+                        img.lozad.object-center.object-cover.h-mob-188.w-mob-279(src="/assets/img/catalog/boat_000/slider_1.webp" data-src="/assets/img/catalog/boat_000/slider_1.webp" alt="#")
+                    div.overflow-hidden.h-mob-188.w-mob-279
+                        img.lozad.object-center.object-cover.h-mob-188.w-mob-279(src="/assets/img/catalog/boat_000/slider_2.webp" data-src="/assets/img/catalog/boat_000/slider_2.webp" alt="#")
+                    div.overflow-hidden.h-mob-188.w-mob-279
+                        img.lozad.object-center.object-cover.h-mob-188.w-mob-279(src="/assets/img/catalog/boat_000/slider_3.webp" data-src="/assets/img/catalog/boat_000/slider_3.webp" alt="#")
+                    div.overflow-hidden.h-mob-188.w-mob-279
+                        img.lozad.object-center.object-cover.h-mob-188.w-mob-279(src="/assets/img/catalog/boat_000/slider_2.webp" data-src="/assets/img/catalog/boat_000/slider_2.webp" alt="#")
+                    div.overflow-hidden.h-mob-188.w-mob-279
+                        img.lozad.object-center.object-cover.h-mob-188.w-mob-279(src="/assets/img/catalog/boat_000/slider_1.webp" data-src="/assets/img/catalog/boat_000/slider_1.webp" alt="#")
+                    div.overflow-hidden.h-mob-188.w-mob-279
+                        img.lozad.object-center.object-cover.h-mob-188.w-mob-279(src="/assets/img/catalog/boat_000/slider_3.webp" data-src="/assets/img/catalog/boat_000/slider_3.webp" alt="#")
+            .card__offer.shrink-0(class="sm:basis-auto sm:order-3 sm:pt-fs-40 sm:border-t-fs-1 sm:border-t-black sm:w-fs-900")
+                p.text-mob-14.leading-160.font-bold.uppercase(class="sm:text-fs-18") Выгодные условия:
+                .grid.grid-cols-2.gap-x-mob-20.gap-y-mob-30.mt-mob-40.mb-mob-36(class="sm:mt-fs-40 sm:grid-cols-3 sm:gap-y-0 sm:gap-x-fs-25 sm:mb-0")
+                    div 
+                        img.lozad.w-mob-35.h-mob-35.mb-mob-15(class="sm:w-fs-35 sm:h-fs-35 sm:mb-fs-15" src="/assets/img/card/box.svg" data-src="/assets/img/card/box.svg" alt="Измерения")
+                        span.block.uppercase.font-bold.text-mob-11.leading-140(class="sm:text-fs-13") Доставка от 2-х дней
+                    div 
+                        img.lozad.w-mob-35.h-mob-35.mb-mob-15(class="sm:w-fs-35 sm:h-fs-35 sm:mb-fs-15" src="/assets/img/card/check.svg" data-src="/assets/img/card/check.svg" alt="Галка")
+                        span.block.uppercase.font-bold.text-mob-11.leading-140(class="sm:text-fs-13") Оплата удобным способом
+                    div 
+                        img.lozad.w-mob-35.h-mob-35.mb-mob-15(class="sm:w-fs-35 sm:h-fs-35 sm:mb-fs-15" src="/assets/img/card/shield.svg" data-src="/assets/img/card/shield.svg" alt="Щит")
+                        span.block.uppercase.font-bold.text-mob-11.leading-140(class="sm:text-fs-13") Гарантия от XX лет
+        div.bg-white.h-fs-50.hidden.inner(class="sm:block")
+            .border-b-fs-1.border-b-black.h-full
+        .card__gallery.--desktop.inner.hidden.bg-white.pb-fs-40.pt-fs-50(class="sm:block")
+            div.flex.flex-row.items-center.justify-between.mb-fs-40
+                p.leading-160.font-bold.uppercase.text-fs-30.text-black Фотогалерея
+                .slider__arrows.hidden(class="sm:block")
+                    .card-prev.arrow.--prev
+                    .card-next.arrow
+            .card-slider.--desktop(class="sm:h-fs-383")
+                div.overflow-hidden(class="sm:w-fs-570 sm:h-fs-383")
+                    img.lozad.object-center.object-cover(class="sm:w-fs-570 sm:h-fs-383" src="/assets/img/catalog/boat_000/slider_1.webp" data-src="/assets/img/catalog/boat_000/slider_1.webp" alt="#")
+                div.overflow-hidden(class="sm:w-fs-570 sm:h-fs-383")
+                    img.lozad.object-center.object-cover(class="sm:w-fs-570 sm:h-fs-383" src="/assets/img/catalog/boat_000/slider_2.webp" data-src="/assets/img/catalog/boat_000/slider_2.webp" alt="#")
+                div.overflow-hidden(class="sm:w-fs-570 sm:h-fs-383")
+                    img.lozad.object-center.object-cover(class="sm:w-fs-570 sm:h-fs-383" src="/assets/img/catalog/boat_000/slider_3.webp" data-src="/assets/img/catalog/boat_000/slider_3.webp" alt="#")
+                div.overflow-hidden(class="sm:w-fs-570 sm:h-fs-383")
+                    img.lozad.object-center.object-cover(class="sm:w-fs-570 sm:h-fs-383" src="/assets/img/catalog/boat_000/slider_2.webp" data-src="/assets/img/catalog/boat_000/slider_2.webp" alt="#")
+                div.overflow-hidden(class="sm:w-fs-570 sm:h-fs-383")
+                    img.lozad.object-center.object-cover(class="sm:w-fs-570 sm:h-fs-383" src="/assets/img/catalog/boat_000/slider_1.webp" data-src="/assets/img/catalog/boat_000/slider_1.webp" alt="#")
+                div.overflow-hidden(class="sm:w-fs-570 sm:h-fs-383")
+                    img.lozad.object-center.object-cover(class="sm:w-fs-570 sm:h-fs-383" src="/assets/img/catalog/boat_000/slider_3.webp" data-src="/assets/img/catalog/boat_000/slider_3.webp" alt="#")
+    include components/section_similar.pug
+    include components/section_prefooter.pug
+include components/footer.pug

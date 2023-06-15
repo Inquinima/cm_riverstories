@@ -21,6 +21,20 @@
         @apply -mx-mob-4 sm:-mx-fs-30;
     }
 
+    .card-slider.--mobile .slick-slide {
+        @apply mx-mob-3;
+    }
+    .card-slider.--mobile .slick-list {
+        @apply -mx-mob-3;
+    }
+
+    .card-slider.--desktop .slick-slide {
+        @apply sm:mx-fs-15;
+    }
+    .card-slider.--desktop .slick-list {
+        @apply sm:-mx-fs-15;
+    }
+
     .reviews__items .slick-slide {
         @apply mx-mob-5 sm:mx-fs-10;
     }
@@ -42,6 +56,38 @@
     .catalog__item-price.--old{
         @apply line-through
     }
+
+
+    .card__price.--new{
+        @apply mr-mob-30 sm:mr-fs-30
+    }
+    .card__price.--old{
+        @apply text-[#A7A7A7] line-through
+    }
+
+    .card__info-descr p{
+        @apply leading-140 text-mob-12 sm:text-fs-14
+    }
+    .card__info-descr p:not(:last-child){
+        @apply mb-mob-15 sm:mb-fs-18
+    }
+    .card__info-list li:not(:last-child){
+        @apply mb-mob-15 sm:mb-fs-12
+    }
+    .card__info-button:not(.--active){
+        @apply border-b-transparent
+    }
+    .card__info-button.--active{
+        @apply border-b-rs-accent
+    }
+    .card__info-button{
+        @apply relative translate-y-fs-3
+    }
+
+    .card__content{
+        @apply sm:relative sm:before:absolute sm:before:content-[''] sm:before:h-full sm:before:w-fs-1 sm:before:left-[54%] sm:before:bg-black
+    }
+
     .page-title{
         @apply uppercase text-mob-30 leading-110 font-bold sm:text-fs-60 mb-mob-34 sm:mb-fs-65
     }
@@ -50,7 +96,14 @@
         @apply relative after:absolute after:content-[''] after:block after:border-r-0 after:border-t-mob-4 after:border-b-mob-4 after:border-l-mob-5  sm:after:border-t-fs-4 sm:after:border-b-fs-4 sm:after:border-l-fs-5 after:border-t-transparent after:border-b-transparent after:border-r-transparent after:border-l-rs-accent after:-right-mob-17 sm:after:-right-fs-25 after:top-1/2 after:-translate-y-1/2 duration-200 transition-colors hover:text-rs-accent
     }
     .crumb:last-child{
-        @apply text-white/50
+        @apply text-white/50 overflow-ellipsis overflow-hidden
+    }
+
+    ul.card__descr li{
+        @apply relative before:absolute before:content-[''] before:block before:border-r-0 before:border-t-mob-4 before:border-b-mob-4 before:border-l-mob-5 sm:before:border-t-fs-4 sm:before:border-b-fs-4 sm:before:border-l-fs-5 before:border-t-transparent before:border-b-transparent before:border-r-transparent before:border-l-rs-accent before:-left-mob-17 sm:before:-left-fs-25 before:top-mob-5 sm:before:top-fs-5 ml-mob-26 sm:ml-fs-26
+    }
+    ul.card__descr li:not(:last-child){
+        @apply mb-mob-16 sm:mb-fs-12
     }
 }
 
