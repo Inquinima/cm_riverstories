@@ -5,7 +5,7 @@ main.main
             .lozad.pt-mob-220.pb-mob-40(class="sm:pt-fs-145 sm:pb-fs-150")
                 .inner
                     h1.text-mob-30.mb-mob-20.leading-140(class="text-left sm:leading-110 sm:text-fs-60 sm:mb-fs-70 sm:max-w-[70%]") Комплексное обслужива&shy;ние лодок, катеров, моторов
-                    a.block.button.text-mob-14.text-center.show-popup(href="#popup" class="sm:w-fit sm:text-fs-16") Проконсультироваться со специалистом
+                    a.block.button.text-mob-14.text-center.show-popup.popup-services-front(href="#popup" class="sm:w-fit sm:text-fs-16") Проконсультироваться со специалистом
         .services__bottom.border-t.border-t-rs-gray(class="sm:border-b-rs-gray sm:border-b")
     ul.tags.inner
         li Услуги сервисного центра
@@ -23,7 +23,7 @@ main.main
         li Палубное покрытие из искусственного тика «ATLANTEAK»
         li Восстановление гелькоута
     section.section.services
-        .services__item.--page.grid.grid-cols-1(class="sm:grid-cols-2")
+        .services__item.--page.grid.grid-cols-1#preparation(class="sm:grid-cols-2")
             div.relative(class="sm:order-2")
                 div.absolute.h-full.w-full.top-0.left-0(class="")
                 div.w-full.bg-no-repeat.bg-center.bg-cover.h-mob-345(class="sm:h-full bg-[url('/assets/img/services/service_1.webp')]")
@@ -50,8 +50,8 @@ main.main
                         div.flex.flex-row.items-center.gap-x-mob-15.triangle.py-mob-18.px-mob-20(class="sm:gap-x-fs-15 bg-[#1D1D1D] sm:py-fs-30 sm:px-fs-20")
                             img.w-mob-24.h-mob-24.lozad(class="sm:w-fs-24 sm:h-fs-24" src="/assets/img/ruble.svg" data-src="/assets/img/ruble.svg" alt="Рубль")
                             span.leading-160.text-mob-16(class="sm:text-fs-16") Цена: от 4 000₽
-                        a.button.block.text-center.mt-mob-10.show-popup(class="sm:py-fs-27 sm:mt-0 sm:col-span-2 sm:text-fs-16 sm:leading-200" href="#popup")  Оставить заявку
-        .services__item.--page.grid.grid-cols-1(class="sm:grid-cols-2")
+                        a.button.block.text-center.mt-mob-10.show-popup.popup-serives-prep(class="sm:py-fs-27 sm:mt-0 sm:col-span-2 sm:text-fs-16 sm:leading-200" href="#popup")  Оставить заявку
+        .services__item.--page.grid.grid-cols-1#maintenance(class="sm:grid-cols-2")
             div.relative
                 div.absolute.h-full.w-full.top-0.left-0
                 div.w-full.bg-no-repeat.bg-center.bg-cover.h-mob-345(class="sm:h-full bg-[url('/assets/img/services/service_2.webp')]")
@@ -75,8 +75,8 @@ main.main
                         div.flex.flex-row.items-center.gap-x-mob-15.triangle.py-mob-18.px-mob-20(class="sm:gap-x-fs-15 bg-[#1D1D1D] sm:py-fs-30 sm:px-fs-20")
                             img.w-mob-24.h-mob-24.lozad(class="sm:w-fs-24 sm:h-fs-24" src="/assets/img/ruble.svg" data-src="/assets/img/ruble.svg" alt="Рубль")
                             span.leading-160.text-mob-16(class="sm:text-fs-16") Цена: от 4 000₽
-                        a.button.block.text-center.mt-mob-10.show-popup(class="sm:py-fs-27 sm:mt-0 sm:col-span-2 sm:text-fs-16 sm:leading-200" href="#popup")  Оставить заявку
-        .services__item.--page.grid.grid-cols-1(class="sm:grid-cols-2")
+                        a.button.block.text-center.mt-mob-10.show-popup.popup-serives-maintenance(class="sm:py-fs-27 sm:mt-0 sm:col-span-2 sm:text-fs-16 sm:leading-200" href="#popup")  Оставить заявку
+        .services__item.--page.grid.grid-cols-1#coating(class="sm:grid-cols-2")
             div.relative(class="sm:order-2")
                 div.absolute.h-full.w-full.top-0.left-0(class="")
                 div.w-full.bg-no-repeat.bg-center.bg-cover.h-mob-345(class="sm:h-full bg-[url('/assets/img/services/service_3.webp')]")
@@ -119,13 +119,13 @@ main.main
                     div.flex.flex-col.items-center.gap-x-fs-14(class="sm:flex-row sm:mr-fs-55")
                         div.flex.flex-col.items-center.gap-y-mob-20.mb-mob-14(class="sm:flex-row sm:ml-fs-55 sm:gap-x-fs-20 sm:mb-0")
                             img.lozad.w-mob-20.h-mob-20(class="sm:w-fs-20 sm:h-fs-20" src="/assets/img/phone.svg" data-src="/assets/img/phone.svg" alt="Телефон")
-                            a.text-mob-14(href="tel:HREF_PHONE_NUMBER" class="sm:text-fs-18") +7 (499) 000-00-00
+                            a.text-mob-14(href="tel:HREF_TEL" class="sm:text-fs-18") +7 (499) 000-00-00
                         div.flex.flex-row.items-center.gap-x-mob-14(class="sm:gap-x-fs-14")
                             a(href="HREF_WHATSAPP")
                                 img.lozad.w-mob-20.h-mob-20(class="sm:w-fs-20 sm:h-fs-20" src="/assets/img/wa.svg" data-src="/assets/img/wa.svg" alt="WhatsApp")
                             a(href="HREF_TELEGRAM")
                                 img.lozad.w-mob-20.h-mob-16(class="sm:w-fs-20 sm:h-fs-16" src="/assets/img/tg.svg" data-src="/assets/img/tg.svg" alt="Telegram")
-                    a(href="#popup").show-popup.button.--small.text-center.inline-block перезвоните мне
+                    a(href="#popup").popup-contacts.show-popup.button.--small.text-center.inline-block перезвоните мне
         <div class="inner mt-mob-40 sm:mt-fs-50" style="position:relative;overflow:hidden;">
             <a href="https://yandex.com/maps/10131/chicago/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Чикаго</a>
             <a href="https://yandex.com/maps/10131/chicago/?ll=-87.621499%2C41.875177&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoyMjQwNTc0MzIwEkFVbml0ZWQgU3RhdGVzIG9mIEFtZXJpY2EsIFN0YXRlIG9mIElsbGlub2lzLCBDb29rIENvdW50eSwgQ2hpY2FnbyIKDV4_r8IVv4AnQg%2C%2C&utm_medium=mapframe&utm_source=maps&z=15.29" style="color:#eee;font-size:12px;position:absolute;top:14px;">Чикаго — Яндекс Карты</a>

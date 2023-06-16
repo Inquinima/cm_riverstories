@@ -96,7 +96,6 @@ $('.cases__items').slick({
         variableWidth: true,
         arrows: false,
         centerMode: true,
-        // infinite: true,
         centerMode: true,
         dots: false,
     });
@@ -164,6 +163,52 @@ $('.cases__items').slick({
             $("form[name='popup_form'] .tel").removeClass('--error');
             $("form[name='popup_form'] .tel").parent().find('.input-error').addClass('--hidden');
         }
+    });
+
+    // Может быть, следует это раскидать по страницам, чтобы оно не загружалось там, где не нужно
+    // Но сделают ли полтора байта погоду...
+    $('.popup-contacts').on('click', function(){
+        $('.popup_hidden_input').val('Заявка по кнопке из блока "Контакты"');
+    });
+    $('.popup-appeal').on('click', function(){
+        $('.popup_hidden_input').val('Заявка по кнопке из блока "Ждём ваших обращений"');
+    });
+
+    $('.popup-about').on('click', function(){
+        $('.popup_hidden_input').val('Заявка со страницы "О компании"');
+    });
+
+    $('.popup-services-front').on('click', function(){
+        $('.popup_hidden_input').val('Заявка с первого блока страницы "Услуги"');
+    });
+
+    $('.popup-serives-prep').on('click', function(){
+        $('.popup_hidden_input').val('Заявка с блока "Подготовка" страницы "Услуги"');
+    });
+    $('.popup-serives-maintenance').on('click', function(){
+        $('.popup_hidden_input').val('Заявка с блока "ТО" страницы "Услуги"');
+    });
+    $('.popup-serives-coating').on('click', function(){
+        $('.popup_hidden_input').val('Заявка с блока "Тиковое покрытие" страницы "Услуги"');
+    });
+    
+    $('.popup-info').on('click', function(){
+        $('.popup_hidden_input').val('Заявка по кнопке из блока "Компания RiverStories"');
+    });
+    
+    $('.popup-boat').on('click', function(){
+        let thisPage = $('h1').text();
+        $('.popup_hidden_input').val(`Заявка по кнопке из блока "${thisPage}"`);
+    });
+
+    $('.popup-header').on('click', function(){
+        $('.popup_hidden_input').val('Заявка по кнопке из шапки');
+    });
+    $('.popup-menu').on('click', function(){
+        $('.popup_hidden_input').val('Заявка по кнопке из меню');
+    });
+    $('.popup-footer').on('click', function(){
+        $('.popup_hidden_input').val('Заявка по кнопке из подвала');
     });
 });
 

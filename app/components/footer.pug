@@ -25,20 +25,20 @@
             nav.nav.flex.flex-col.mb-mob-40(class="sm:mb-fs-60")
                 span.block.py-mob-15.text-mob-14(class="sm:text-fs-14 sm:py-fs-15 sm:border-b-fs-1 border-b-mob-1 border-b-black") Навигация
                 ul
+                    li 
+                        a(href="/services.html#preparation") Подготовка
+                    li 
+                        a(href="/services.html#maintenance") ТО
+                    li 
+                        a(href="/services.html#coating") Тиковое покрытие
+                    li 
+                        a(href="/catalog.html") Каталог 
                     li
-                        a(href="/") Тюнинг
-                    li
-                        a(href="/") ТО
-                    li
-                        a(href="/") Тиковое покрытие
-                    li
-                        a(href="/") Каталог 
-                    li
-                        a(href="/") Продажа 
-                    li
-                        a(href="/") О компании
-                    li
-                        a(href="/") Контакты
+                        a(href="/sell.html") Продажа 
+                    li 
+                        a(href="/about.html") О компании
+                    li 
+                        a(href="/contacts.html") Контакты
             .contacts.flex.flex-col
                 span.block.py-mob-15.text-mob-14(class="sm:text-fs-14 sm:py-fs-15 sm:border-b-fs-1 border-b-mob-1 border-b-black") Контакты
                 div.flex.flex-col.items-center.gap-y-mob-30.mt-mob-15(class="sm:mt-fs-15 sm:flex-row sm:gap-y-0")
@@ -50,25 +50,26 @@
                             a(href="HREF_TELEGRAM")
                                 img.lozad.w-mob-20.h-mob-16(class="sm:w-fs-20 sm:h-fs-16" src="/assets/img/tg_black.svg" data-src="/assets/img/tg_black.svg" alt="Telegram")
                 p.text-mob-12.leading-160.uppercase.font-bold.mt-mob-30(class="sm:text-fs-16 sm:mt-fs-30") Долгопрудный, <br> улица Уличных улиц, дом 15
-                a.inline-block.button.show-popup.w-fit.--small.mt-mob-30.mb-mob-60(class="sm:mt-fs-30 sm:mb-fs-60" href="#popup") Готовы пообщаться?
+                a.inline-block.button.show-popup.w-fit.--small.mt-mob-30.mb-mob-60.popup-menu(class="sm:mt-fs-30 sm:mb-fs-60" href="#popup") Готовы пообщаться?
 footer.footer.mt-mob-36(class="sm:mt-fs-80")
     .footer__top.flex.flex-col.items-center.border-t.border-rs-gray.font-bold.py-mob-40.px-mob-20(class="sm:flex-row sm:px-fs-40 sm:py-0")
         nav.nav
-            ul.flex.flex-col.justify-center.gap-x-fs-66(class="sm:flex-row sm:justify-start")
+            ul
+                //- // Для выделения текущей страницы нужно использовать класс "--current"
                 li 
-                    a(href="#") Тюнинг
+                    a(href="/services.html#preparation") Подготовка
                 li 
-                    a(href="#") ТО
+                    a(href="/services.html#maintenance") ТО
                 li 
-                    a(href="#") Тиковое покрытие
+                    a(href="/services.html#coating") Тиковое покрытие
                 li 
-                    a(href="#") Каталог 
-                li.--current
-                    a(href="#") Продажа 
+                    a(href="/catalog.html") Каталог 
+                li
+                    a(href="/sell.html") Продажа 
                 li 
-                    a(href="#") О компании
+                    a(href="/about.html") О компании
                 li 
-                    a(href="#") Контакты
+                    a(href="/contacts.html") Контакты
         button.hidden.items-center.justify-center.border-l.border-r.border-rs-gray.w-fs-66.h-fs-66.transition-colors.ml-auto(class="hover:bg-rs-accent-active sm:flex")
             img(src="/assets/img/burger.svg" data-src="/assets/img/burger.svg" alt="Меню").w-fs-20.h-fs-15
     .footer__middle.py-mob-40.border-t.border-t-rs-gray(class="sm:py-fs-30")
@@ -89,7 +90,7 @@ footer.footer.mt-mob-36(class="sm:mt-fs-80")
                                 img.lozad.w-mob-20.h-mob-20(class="sm:w-fs-20 sm:h-fs-20" src="/assets/img/wa.svg" data-src="/assets/img/wa.svg" alt="WhatsApp")
                             a(href="HREF_TELEGRAM")
                                 img.lozad.w-mob-20.h-mob-16(class="sm:w-fs-20 sm:h-fs-16" src="/assets/img/tg.svg" data-src="/assets/img/tg.svg" alt="Telegram")
-                    a(href="#popup").show-popup.button.--small.text-center.inline-block перезвоните мне
+                    a(href="#popup").popup-footer.show-popup.button.--small.text-center.inline-block перезвоните мне
     .footer__bottom.py-mob-30.border-t.border-t-rs-gray(class="sm:py-fs-30")
         .footer__bottom-inner.px-mob-20.flex.flex-col.gap-y-mob-30(class="sm:px-fs-40 sm:gap-y-0 sm:justify-between")
             div.text-rs-gray.text-mob-12.leading-140.text-center(class="sm:text-fs-14 sm:text-left")

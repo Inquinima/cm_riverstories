@@ -16,7 +16,7 @@ doctype html
                         a.block.logo.py-mob-15(href="/" class="sm:border-r sm:border-rs-gray pr-fs-15 sm:pl-fs-15 sm:py-fs-23 sm:pr-fs-33")
                             img.lozad.w-mob-171.h-mob-28(class="sm:h-fs-36 sm:w-fs-219" src="/assets/img/logo.svg" data-src="/assets/img/logo.svg" alt="Логотип RiverStories")
                         div(class="sm:hidden").flex.flex-row
-                            a(href="tel:HREF_PHONE_NUMBER").flex.items-center.justify-center.border-l.border-rs-gray.w-mob-60.h-mob-60
+                            a(href="tel:HREF_TEL").flex.items-center.justify-center.border-l.border-rs-gray.w-mob-60.h-mob-60
                                 img.lozad(src="/assets/img/phone.svg" data-src="/assets/img/phone.svg" alt="Телефон").w-mob-20.h-mob-20
                             button.show-menu.flex.items-center.justify-center.border-l.border-rs-gray.w-mob-60.h-mob-60.transition-colors(class="hover:bg-rs-accent-active")
                                 img.lozad(src="/assets/img/burger.svg" data-src="/assets/img/burger.svg" alt="Меню").w-mob-20.h-mob-15
@@ -27,28 +27,29 @@ doctype html
                             div.flex.flex-row.items-center.gap-x-fs-14.mr-fs-55
                                 div.flex.flex-row.items-center.ml-fs-55.gap-x-fs-20
                                     img.lozad.w-mob-20.h-mob-20(class="sm:w-fs-20 sm:h-fs-20" src="/assets/img/phone.svg" data-src="/assets/img/phone.svg" alt="Телефон")
-                                    a.text-fs-18(href="tel:HREF_PHONE_NUMBER") +7 (499) 000-00-00
+                                    a.text-fs-18(href="tel:HREF_TEL") +7 (499) 000-00-00
                                 a(href="HREF_WHATSAPP")
                                     img.lozad.w-fs-20.h-fs-20(src="/assets/img/wa.svg" data-src="/assets/img/wa.svg" alt="WhatsApp")
                                 a(href="HREF_TELEGRAM")
                                     img.lozad.w-fs-20.h-fs-16(src="/assets/img/tg.svg" data-src="/assets/img/tg.svg" alt="Telegram")
-                            a(href="#popup").show-popup.button.--small.text-center.inline-block перезвоните мне
+                            a(href="#popup").popup-header.show-popup.button.--small.text-center.inline-block перезвоните мне
                 .header__bottom.hidden.flex-row.items-center.px-fs-40.border-b-rs-gray(class="sm:flex sm:border-b-fs-1")
                     nav.nav
-                        ul.flex.flex-row.gap-x-fs-66
+                        ul
+                            //- // для выделения текущей страницы нужно использовать класс "--current"
                             li
-                                a(href="#") Тюнинг
+                                a(href="/services.html#tuning") Тюнинг
                             li
-                                a(href="#") ТО
+                                a(href="/services.html#maintenance") ТО
                             li
-                                a(href="#") Тиковое покрытие
-                            li.--current
-                                a(href="#") Каталог
+                                a(href="/services.html#coating") Тиковое покрытие
                             li
-                                a(href="#") Продажа
+                                a(href="/catalog.html") Каталог
                             li
-                                a(href="#") О компании
+                                a(href="/sell.html") Продажа
                             li
-                                a(href="#") Контакты
+                                a(href="/about.html") О компании
+                            li
+                                a(href="/contacts.html") Контакты
                     button.show-menu.flex.items-center.justify-center.border-l.border-r.border-rs-gray.w-fs-66.h-fs-66.transition-colors.ml-auto(class="hover:bg-rs-accent-active")
                         img(src="/assets/img/burger.svg" data-src="/assets/img/burger.svg" alt="Меню").w-fs-20.h-fs-15

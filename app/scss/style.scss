@@ -167,6 +167,10 @@
         @apply relative  sm:after:content-["/"] sm:after:inline-block sm:after:absolute sm:after:-right-[1.719vw] sm:after:text-rs-gray mb-mob-14 sm:mb-0;
     }
 
+    .header .header__bottom nav.nav ul{
+        @apply flex flex-row gap-x-fs-66
+    }
+
     .header .header__bottom ul li{
         @apply border-b-2 border-b-transparent;
     }
@@ -179,6 +183,10 @@
     }
     .footer .footer__top ul li.--current{
         @apply  sm:border-t-rs-accent-active text-rs-accent-active;
+    }
+
+    .footer nav.nav ul{
+        @apply flex flex-col justify-center gap-x-fs-66 sm:flex-row sm:justify-start
     }
 
     .services__item-text.wysiwyg p{
@@ -259,6 +267,88 @@
     .overlay-popup.menu ul li:not(:last-child){
         @apply mb-mob-20 sm:mb-fs-20
     }
+
+    .article{
+        @apply sm:bg-white inner sm:pt-fs-40 sm:pb-fs-110 pb-mob-40
+    }
+    .article-image-wrapper{ 
+        @apply h-mob-190 w-mob-360 sm:h-fs-500 sm:w-full sm:pt-fs-40 sm:px-fs-40 bg-white
+    }
+    .article-image{
+        @apply w-full h-full bg-no-repeat bg-center bg-cover
+    }
+    .article .wysiwyg{
+        @apply bg-white text-black
+    }
+    .article-container{
+        @apply w-[51.3vw] mx-auto
+    }
+    .article .wysiwyg h1{
+        @apply uppercase font-bold leading-140 text-mob-30 sm:text-fs-40 mb-mob-36 sm:mb-fs-60 mt-mob-36 sm:mt-0
+    }
+    .article .wysiwyg h2{
+        @apply uppercase font-bold leading-140 text-mob-18 sm:text-fs-30 mt-mob-40 sm:mt-fs-60 mb-mob-30 sm:mb-fs-30
+    }
+    .article .wysiwyg h3{
+        @apply uppercase font-bold leading-140 text-mob-16 sm:text-fs-22 mt-mob-40 sm:mt-fs-60 mb-mob-30 sm:mb-fs-30
+    }
+    .article .wysiwyg p{
+        @apply leading-140 text-mob-12 sm:leading-160 sm:text-fs-14 my-mob-16 sm:my-fs-30
+    }
+    .article .wysiwyg ul{
+        @apply my-mob-16 sm:my-fs-30
+    }
+    .article .wysiwyg ul li{
+        @apply mark leading-140 text-mob-12 sm:leading-160 sm:text-fs-14
+    }
+    .article .wysiwyg ul li:not(:last-child){
+        @apply mb-mob-16 sm:mb-fs-20
+    }
+    .article .wysiwyg ol{
+        @apply my-mob-16 sm:my-fs-30 list-none
+    }
+    .article .wysiwyg ol li{
+        @apply leading-140 text-mob-12 sm:leading-160 sm:text-fs-14 before:font-bold before:text-mob-14 sm:before:text-fs-18 flex flex-row gap-x-mob-16 sm:gap-x-fs-16
+    }
+    .article .wysiwyg ol li:not(:last-child){
+        @apply mb-mob-16 sm:mb-fs-20
+    }
+    .article .wysiwyg div.table-wrapper{
+        @apply overflow-x-scroll mt-mob-16 mb-mob-60 sm:my-fs-60
+    }
+    .article .wysiwyg table{
+        @apply w-full text-mob-13 sm:text-fs-13 max-sm:whitespace-nowrap
+    }
+    .article .wysiwyg table td{
+        @apply p-mob-20 sm:p-fs-20 leading-140 
+    }
+    .article .wysiwyg table td:first-child{
+        @apply font-bold uppercase  
+    }
+    .article .wysiwyg table td:not(:last-child){
+        @apply border-black border-r-mob-1 sm:border-r-fs-1
+    }
+    .article .wysiwyg table thead{
+        @apply border-black border-b-mob-1 sm:border-b-fs-1 font-bold uppercase
+    }
+    .article .wysiwyg table tr:not(:last-child){
+        @apply border-black border-b-mob-1 sm:border-b-fs-1
+    }
+    .article .wysiwyg img{
+        @apply w-full h-auto mt-mob-36 mb-mob-40 sm:my-fs-60
+    }
+}
+.article .wysiwyg ol{
+    counter-reset: listitems;
+}
+.article .wysiwyg ol li:nth-child(-n+9)::before{
+    counter-increment: listitems;
+    content: "0" counter(listitems) " ";
+    // Да знаю я, что есть leading-zero, мне было скучно
+}
+.article .wysiwyg ol li:nth-child(n+10)::before{
+    counter-increment: listitems;
+    content: counter(listitems) " ";
 }
 
 .overlay-popup.menu{

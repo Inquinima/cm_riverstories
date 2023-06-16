@@ -12,7 +12,7 @@
 <header class="header font-bold">
   <div class="header__top border-b border-rs-gray">
     <div class="header__top-inner pl-mob-20 flex flex-row justify-between sm:px-fs-40"><a class="block logo py-mob-15 sm:border-r sm:border-rs-gray pr-fs-15 sm:pl-fs-15 sm:py-fs-23 sm:pr-fs-33" href="/"><img class="lozad w-mob-171 h-mob-28 sm:h-fs-36 sm:w-fs-219" src="/assets/img/logo.svg" data-src="/assets/img/logo.svg" alt="Логотип RiverStories"></a>
-      <div class="sm:hidden flex flex-row"><a class="flex items-center justify-center border-l border-rs-gray w-mob-60 h-mob-60" href="tel:HREF_PHONE_NUMBER"><img class="lozad w-mob-20 h-mob-20" src="/assets/img/phone.svg" data-src="/assets/img/phone.svg" alt="Телефон"></a>
+      <div class="sm:hidden flex flex-row"><a class="flex items-center justify-center border-l border-rs-gray w-mob-60 h-mob-60" href="tel:HREF_TEL"><img class="lozad w-mob-20 h-mob-20" src="/assets/img/phone.svg" data-src="/assets/img/phone.svg" alt="Телефон"></a>
         <button class="show-menu flex items-center justify-center border-l border-rs-gray w-mob-60 h-mob-60 transition-colors hover:bg-rs-accent-active"><img class="lozad w-mob-20 h-mob-15" src="/assets/img/burger.svg" data-src="/assets/img/burger.svg" alt="Меню"></button>
       </div>
       <div class="hidden flex-row items-center sm:flex">
@@ -20,21 +20,21 @@
           <p class="text-fs-11">Долгопрудный, <br> улица Уличных улиц, дом 15</p>
         </div>
         <div class="flex flex-row items-center gap-x-fs-14 mr-fs-55">
-          <div class="flex flex-row items-center ml-fs-55 gap-x-fs-20"><img class="lozad w-mob-20 h-mob-20 sm:w-fs-20 sm:h-fs-20" src="/assets/img/phone.svg" data-src="/assets/img/phone.svg" alt="Телефон"><a class="text-fs-18" href="tel:HREF_PHONE_NUMBER">+7 (499) 000-00-00</a></div><a href="HREF_WHATSAPP"><img class="lozad w-fs-20 h-fs-20" src="/assets/img/wa.svg" data-src="/assets/img/wa.svg" alt="WhatsApp"></a><a href="HREF_TELEGRAM"><img class="lozad w-fs-20 h-fs-16" src="/assets/img/tg.svg" data-src="/assets/img/tg.svg" alt="Telegram"></a>
-        </div><a class="show-popup button --small text-center inline-block" href="#popup">перезвоните мне</a>
+          <div class="flex flex-row items-center ml-fs-55 gap-x-fs-20"><img class="lozad w-mob-20 h-mob-20 sm:w-fs-20 sm:h-fs-20" src="/assets/img/phone.svg" data-src="/assets/img/phone.svg" alt="Телефон"><a class="text-fs-18" href="tel:HREF_TEL">+7 (499) 000-00-00</a></div><a href="HREF_WHATSAPP"><img class="lozad w-fs-20 h-fs-20" src="/assets/img/wa.svg" data-src="/assets/img/wa.svg" alt="WhatsApp"></a><a href="HREF_TELEGRAM"><img class="lozad w-fs-20 h-fs-16" src="/assets/img/tg.svg" data-src="/assets/img/tg.svg" alt="Telegram"></a>
+        </div><a class="popup-header show-popup button --small text-center inline-block" href="#popup">перезвоните мне</a>
       </div>
     </div>
   </div>
   <div class="header__bottom hidden flex-row items-center px-fs-40 border-b-rs-gray sm:flex sm:border-b-fs-1">
     <nav class="nav">
-      <ul class="flex flex-row gap-x-fs-66">
-        <li><a href="#">Тюнинг</a></li>
-        <li><a href="#">ТО</a></li>
-        <li><a href="#">Тиковое покрытие</a></li>
-        <li class="--current"><a href="#">Каталог</a></li>
-        <li><a href="#">Продажа</a></li>
-        <li><a href="#">О компании</a></li>
-        <li><a href="#">Контакты</a></li>
+      <ul>
+        <li><a href="/services.html#tuning">Тюнинг</a></li>
+        <li><a href="/services.html#maintenance">ТО</a></li>
+        <li><a href="/services.html#coating">Тиковое покрытие</a></li>
+        <li><a href="/catalog.html">Каталог</a></li>
+        <li><a href="/sell.html">Продажа</a></li>
+        <li><a href="/about.html">О компании</a></li>
+        <li><a href="/contacts.html">Контакты</a></li>
       </ul>
     </nav>
     <button class="show-menu flex items-center justify-center border-l border-r border-rs-gray w-fs-66 h-fs-66 transition-colors ml-auto hover:bg-rs-accent-active"><img class="w-fs-20 h-fs-15" src="/assets/img/burger.svg" data-src="/assets/img/burger.svg" alt="Меню"></button>
@@ -77,8 +77,9 @@
           <div class="inner sm:h-full sm:flex sm:flex-col">
             <h3 class="uppercase font-bold text-mob-18 leading-140 mb-mob-20 sm:mb-fs-40 sm:text-fs-30">Сервисное обслуживание</h3>
             <div class="services__item-text wysiwyg mb-mob-30 sm:mb-0">
+              <!-- сюда можно вставить простой wysiwyg-->
               <ul>
-                <li>Тюнинг</li>
+                <li>Подготовка</li>
                 <li>ТО</li>
                 <li>Тиковое покрытие</li>
               </ul>
@@ -93,6 +94,7 @@
           <div class="inner sm:h-full sm:flex sm:flex-col">
             <h3 class="uppercase font-bold text-mob-18 leading-140 mb-mob-20 sm:mb-fs-40 sm:text-fs-30">ПОКУПКА</h3>
             <div class="services__item-text wysiwyg mb-mob-30 sm:mb-0">
+              <!-- сюда можно вставить простой wysiwyg-->
               <p>112 лодок и катеров в наличии</p>
               <p>17 мировых производителей от официального дилера без переплат</p>
               <p>Новые модели и б/у </p>
@@ -107,6 +109,7 @@
           <div class="inner sm:h-full sm:flex sm:flex-col">
             <h3 class="uppercase font-bold text-mob-18 leading-140 mb-mob-20 sm:mb-fs-40 sm:text-fs-30">ПРОДАЖА</h3>
             <div class="services__item-text wysiwyg mb-mob-30 sm:mb-0">
+              <!-- сюда можно вставить простой wysiwyg-->
               <p>профессионально поможем в продаже вашего катера, выкупим в случае срочной сделки</p>
             </div>
             <div class="inline-block arrow mt-auto"></div>
@@ -231,7 +234,7 @@
       <div class="sm:col-span-2">
         <h2 class="leading-140 text-mob-26 font-bold uppercase mb-mob-36 sm:text-fs-40 sm:mb-fs-40">Получите консультацию специалиста по решению ваших задач </h2>
         <form class="grid grid-cols-1 gap-y-mob-14 sm:grid-cols-2 sm:gap-x-fs-30 sm:gap-y-0 items-end" action="FORM_ACTION" method="POST" name="page_cta">
-          <div>
+          <div><input type="text" hidden class="cta_hidden_input" value="Заявка из блока Получите консультацию" name="cta_hidden">
             <div class="text-mob-12 flex flex-row items-center justify-between mb-mob-16 sm:text-fs-16 sm:mb-fs-20">
               <label for="page_cta_tel">Номер телефона:</label><span class="input-error text-rs-error --hidden">Ошибка ввода</span>
             </div>
@@ -260,7 +263,7 @@
         <div class="mb-mob-46 sm:mb-fs-110">
           <p class="font-bold uppercase mb-mob-16 leading-140 text-mob-14 sm:text-fs-18 sm:mb-fs-40">С вами работает опытная и талантливая команда профессионалов разных сфер. </p>
           <p class="leading-140 text-mob-12 sm:text-fs-14">Это значит, что вы можете полностью доверить нам задачи по подбору и обслуживанию катеров. Мы готовы предложить индивидуальные, смелые и функциональные решения для каждого клиента. </p>
-        </div><a class="uppercase flex flex-row items-center group show-popup sm:pb-fs-20" href="#popup">
+        </div><a class="uppercase flex flex-row items-center group show-popup popup-info sm:pb-fs-20" href="#popup">
           <div class="arrow mr-mob-25 w-mob-50 h-mob-50 shrink-0 sm:mr-fs-25 sm:w-fs-50 sm:h-fs-50 group-hover:bg-rs-accent-active"></div><span class="inline-lbock leading-140 text-mob-13 font-bold sm:text-fs-13">Пообщаться со специалистом</span></a>
       </div>
     </div>
@@ -291,6 +294,7 @@
           </div>
           <div class="reviews__item-body">
             <div class="cases__item-main text-mob-12 sm:text-fs-16">
+              <!-- Здесь может быть простой wysiwyg -->
               <p>Это значит, что вы можете полностью доверить нам задачи по подбору и обслуживанию катеров. Мы готовы предложить индивидуальные, смелые и функциональные решения для каждого клиента. </p>
               <p>Это значит, что вы можете полностью доверить нам задачи по подбору и обслуживанию катеров. Мы готовы предложить индивидуальные, смелые и функциональные решения для каждого клиента. </p>
             </div>
@@ -304,6 +308,7 @@
           </div>
           <div class="reviews__item-body">
             <div class="cases__item-main text-mob-12 sm:text-fs-16">
+              <!-- Здесь может быть простой wysiwyg (рассчитано только на тег <p>)-->
               <p>Это значит, что вы можете полностью доверить нам задачи по подбору и обслуживанию катеров. Мы готовы предложить индивидуальные, смелые и функциональные решения для каждого клиента. </p>
               <p>Это значит, что вы можете полностью доверить нам задачи по подбору и обслуживанию катеров. Мы готовы предложить индивидуальные, смелые и функциональные решения для каждого клиента. </p>
             </div>
@@ -317,6 +322,7 @@
           </div>
           <div class="reviews__item-body">
             <div class="cases__item-main text-mob-12 sm:text-fs-16">
+              <!-- Здесь может быть простой wysiwyg (рассчитано только на тег <p>)-->
               <p>Это значит, что вы можете полностью доверить нам задачи по подбору и обслуживанию катеров. Мы готовы предложить индивидуальные, смелые и функциональные решения для каждого клиента. </p>
               <p>Это значит, что вы можете полностью доверить нам задачи по подбору и обслуживанию катеров. Мы готовы предложить индивидуальные, смелые и функциональные решения для каждого клиента. </p>
             </div>
@@ -330,6 +336,7 @@
           </div>
           <div class="reviews__item-body">
             <div class="cases__item-main text-mob-12 sm:text-fs-16">
+              <!-- Здесь может быть простой wysiwyg (рассчитано только на тег <p>)-->
               <p>Это значит, что вы можете полностью доверить нам задачи по подбору и обслуживанию катеров. Мы готовы предложить индивидуальные, смелые и функциональные решения для каждого клиента. </p>
               <p>Это значит, что вы можете полностью доверить нам задачи по подбору и обслуживанию катеров. Мы готовы предложить индивидуальные, смелые и функциональные решения для каждого клиента. </p>
             </div>
@@ -343,6 +350,7 @@
           </div>
           <div class="reviews__item-body">
             <div class="cases__item-main text-mob-12 sm:text-fs-16">
+              <!-- Здесь может быть простой wysiwyg (рассчитано только на тег <p>)-->
               <p>Это значит, что вы можете полностью доверить нам задачи по подбору и обслуживанию катеров. Мы готовы предложить индивидуальные, смелые и функциональные решения для каждого клиента. </p>
               <p>Это значит, что вы можете полностью доверить нам задачи по подбору и обслуживанию катеров. Мы готовы предложить индивидуальные, смелые и функциональные решения для каждого клиента. </p>
             </div>
@@ -373,9 +381,9 @@
         </div>
         <div class="flex flex-col items-center gap-y-mob-30 text-center sm:text-left sm:flex-row sm:gap-y-0">
           <div class="flex flex-col items-center gap-x-fs-14 sm:flex-row sm:mr-fs-55">
-            <div class="flex flex-col items-center gap-y-mob-20 mb-mob-14 sm:flex-row sm:ml-fs-55 sm:gap-x-fs-20 sm:mb-0"><img class="lozad w-mob-20 h-mob-20 sm:w-fs-20 sm:h-fs-20" src="/assets/img/phone.svg" data-src="/assets/img/phone.svg" alt="Телефон"><a class="text-mob-14 sm:text-fs-18" href="tel:HREF_PHONE_NUMBER">+7 (499) 000-00-00</a></div>
+            <div class="flex flex-col items-center gap-y-mob-20 mb-mob-14 sm:flex-row sm:ml-fs-55 sm:gap-x-fs-20 sm:mb-0"><img class="lozad w-mob-20 h-mob-20 sm:w-fs-20 sm:h-fs-20" src="/assets/img/phone.svg" data-src="/assets/img/phone.svg" alt="Телефон"><a class="text-mob-14 sm:text-fs-18" href="tel:HREF_TEL">+7 (499) 000-00-00</a></div>
             <div class="flex flex-row items-center gap-x-mob-14 sm:gap-x-fs-14"><a href="HREF_WHATSAPP"><img class="lozad w-mob-20 h-mob-20 sm:w-fs-20 sm:h-fs-20" src="/assets/img/wa.svg" data-src="/assets/img/wa.svg" alt="WhatsApp"></a><a href="HREF_TELEGRAM"><img class="lozad w-mob-20 h-mob-16 sm:w-fs-20 sm:h-fs-16" src="/assets/img/tg.svg" data-src="/assets/img/tg.svg" alt="Telegram"></a></div>
-          </div><a class="show-popup button --small text-center inline-block" href="#popup">перезвоните мне</a>
+          </div><a class="popup-contacts show-popup button --small text-center inline-block" href="#popup">перезвоните мне</a>
         </div>
       </div>
     </div><div class="inner mt-mob-40 sm:mt-fs-50" style="position:relative;overflow:hidden;">
@@ -408,13 +416,13 @@
       </div>
       <nav class="nav flex flex-col mb-mob-40 sm:mb-fs-60"><span class="block py-mob-15 text-mob-14 sm:text-fs-14 sm:py-fs-15 sm:border-b-fs-1 border-b-mob-1 border-b-black">Навигация</span>
         <ul>
-          <li><a href="/">Тюнинг</a></li>
-          <li><a href="/">ТО</a></li>
-          <li><a href="/">Тиковое покрытие</a></li>
-          <li><a href="/">Каталог </a></li>
-          <li><a href="/">Продажа </a></li>
-          <li><a href="/">О компании</a></li>
-          <li><a href="/">Контакты</a></li>
+          <li> <a href="/services.html#preparation">Подготовка</a></li>
+          <li> <a href="/services.html#maintenance">ТО</a></li>
+          <li> <a href="/services.html#coating">Тиковое покрытие</a></li>
+          <li> <a href="/catalog.html">Каталог </a></li>
+          <li><a href="/sell.html">Продажа </a></li>
+          <li> <a href="/about.html">О компании</a></li>
+          <li> <a href="/contacts.html">Контакты</a></li>
         </ul>
       </nav>
       <div class="contacts flex flex-col"><span class="block py-mob-15 text-mob-14 sm:text-fs-14 sm:py-fs-15 sm:border-b-fs-1 border-b-mob-1 border-b-black">Контакты</span>
@@ -423,7 +431,7 @@
             <div class="flex flex-row items-center gap-x-mob-14 sm:gap-x-fs-14"><a href="HREF_WHATSAPP"><img class="lozad w-mob-20 h-mob-20 sm:w-fs-20 sm:h-fs-20" src="/assets/img/wa_black.svg" data-src="/assets/img/wa_black.svg" alt="WhatsApp"></a><a href="HREF_TELEGRAM"><img class="lozad w-mob-20 h-mob-16 sm:w-fs-20 sm:h-fs-16" src="/assets/img/tg_black.svg" data-src="/assets/img/tg_black.svg" alt="Telegram"></a></div>
           </div>
         </div>
-        <p class="text-mob-12 leading-160 uppercase font-bold mt-mob-30 sm:text-fs-16 sm:mt-fs-30">Долгопрудный, <br> улица Уличных улиц, дом 15</p><a class="inline-block button show-popup w-fit --small mt-mob-30 mb-mob-60 sm:mt-fs-30 sm:mb-fs-60" href="#popup">Готовы пообщаться?</a>
+        <p class="text-mob-12 leading-160 uppercase font-bold mt-mob-30 sm:text-fs-16 sm:mt-fs-30">Долгопрудный, <br> улица Уличных улиц, дом 15</p><a class="inline-block button show-popup w-fit --small mt-mob-30 mb-mob-60 popup-menu sm:mt-fs-30 sm:mb-fs-60" href="#popup">Готовы пообщаться?</a>
       </div>
     </div>
   </div>
@@ -431,14 +439,14 @@
 <footer class="footer mt-mob-36 sm:mt-fs-80">
   <div class="footer__top flex flex-col items-center border-t border-rs-gray font-bold py-mob-40 px-mob-20 sm:flex-row sm:px-fs-40 sm:py-0">
     <nav class="nav">
-      <ul class="flex flex-col justify-center gap-x-fs-66 sm:flex-row sm:justify-start">
-        <li> <a href="#">Тюнинг</a></li>
-        <li> <a href="#">ТО</a></li>
-        <li> <a href="#">Тиковое покрытие</a></li>
-        <li> <a href="#">Каталог </a></li>
-        <li class="--current"><a href="#">Продажа </a></li>
-        <li> <a href="#">О компании</a></li>
-        <li> <a href="#">Контакты</a></li>
+      <ul>
+        <li> <a href="/services.html#preparation">Подготовка</a></li>
+        <li> <a href="/services.html#maintenance">ТО</a></li>
+        <li> <a href="/services.html#coating">Тиковое покрытие</a></li>
+        <li> <a href="/catalog.html">Каталог </a></li>
+        <li><a href="/sell.html">Продажа </a></li>
+        <li> <a href="/about.html">О компании</a></li>
+        <li> <a href="/contacts.html">Контакты</a></li>
       </ul>
     </nav>
     <button class="hidden items-center justify-center border-l border-r border-rs-gray w-fs-66 h-fs-66 transition-colors ml-auto hover:bg-rs-accent-active sm:flex"><img class="w-fs-20 h-fs-15" src="/assets/img/burger.svg" data-src="/assets/img/burger.svg" alt="Меню"></button>
@@ -456,7 +464,7 @@
           <div class="flex flex-col items-center gap-x-fs-14 sm:flex-row sm:mr-fs-55">
             <div class="flex flex-col items-center gap-y-mob-20 mb-mob-14 sm:flex-row sm:ml-fs-55 sm:gap-x-fs-20 sm:mb-0"><img class="lozad w-mob-20 h-mob-20 sm:w-fs-20 sm:h-fs-20" src="/assets/img/phone.svg" data-src="/assets/img/phone.svg" alt="Телефон"><a class="text-mob-14 sm:text-fs-18" href="tel:HREF_PHONE_NUMBER">+7 (499) 000-00-00</a></div>
             <div class="flex flex-row items-center gap-x-mob-14 sm:gap-x-fs-14"><a href="HREF_WHATSAPP"><img class="lozad w-mob-20 h-mob-20 sm:w-fs-20 sm:h-fs-20" src="/assets/img/wa.svg" data-src="/assets/img/wa.svg" alt="WhatsApp"></a><a href="HREF_TELEGRAM"><img class="lozad w-mob-20 h-mob-16 sm:w-fs-20 sm:h-fs-16" src="/assets/img/tg.svg" data-src="/assets/img/tg.svg" alt="Telegram"></a></div>
-          </div><a class="show-popup button --small text-center inline-block" href="#popup">перезвоните мне</a>
+          </div><a class="popup-footer show-popup button --small text-center inline-block" href="#popup">перезвоните мне</a>
         </div>
       </div>
     </div>
