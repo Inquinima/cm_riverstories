@@ -21,7 +21,7 @@
         </div>
         <div class="flex flex-row items-center gap-x-fs-14 mr-fs-55">
           <div class="flex flex-row items-center ml-fs-55 gap-x-fs-20"><img class="lozad w-mob-20 h-mob-20 sm:w-fs-20 sm:h-fs-20" src="/assets/img/phone.svg" data-src="/assets/img/phone.svg" alt="Телефон"><a class="text-fs-18" href="tel:HREF_PHONE_NUMBER">+7 (499) 000-00-00</a></div><a href="HREF_WHATSAPP"><img class="lozad w-fs-20 h-fs-20" src="/assets/img/wa.svg" data-src="/assets/img/wa.svg" alt="WhatsApp"></a><a href="HREF_TELEGRAM"><img class="lozad w-fs-20 h-fs-16" src="/assets/img/tg.svg" data-src="/assets/img/tg.svg" alt="Telegram"></a>
-        </div><a class="button --small text-center inline-block" href="#callback">перезвоните мне</a>
+        </div><a class="show-popup button --small text-center inline-block" href="#popup">перезвоните мне</a>
       </div>
     </div>
   </div>
@@ -48,7 +48,7 @@
       <div><span class="block text-mob-12 leading-140 mb-mob-10 sm:text-fs-14 sm:mb-fs-26 text-white/50">Телефон:</span>
         <div class="flex flex-row items-center mb-mob-25 sm:mb-fs-30"><a class="text-mob-14 font-bold mr-mob-30 sm:text-fs-30 sm:mr-fs-30" href="tel:HREF_TEL">+7 (499) 000-00-00</a>
           <div class="flex flex-row items-center gap-x-mob-14 sm:gap-x-fs-14"><a href="HREF_WHATSAPP"><img class="lozad w-mob-20 h-mob-20 sm:w-fs-20 sm:h-fs-20" src="/assets/img/wa_accent.svg" data-src="/assets/img/wa_accent.svg" alt="WhatsApp"></a><a href="HREF_TELEGRAM"><img class="lozad w-mob-20 h-mob-16 sm:w-fs-20 sm:h-fs-20" src="/assets/img/tg_accent.svg" data-src="/assets/img/tg_accent.svg" alt="Telegram"></a></div>
-        </div><a class="button --small" href="HREF_POPUP">перезвоните мне</a>
+        </div><a class="button --small show-popup" href="#popup">перезвоните мне</a>
       </div>
       <div><span class="block text-mob-12 leading-140 mb-mob-10 sm:text-fs-14 sm:mb-fs-26 text-white/50">E-mail:</span><a class="font-bold text-mob-14 leading-160 underline underline-offset-mob-4 sm:text-fs-22 sm:underline-offset-fs-4" href="mailto:name-email@mail.com">name-email@mail.com</a></div>
       <div><span class="block text-mob-12 leading-140 mb-mob-10 sm:text-fs-14 sm:mb-fs-26 text-white/50">Адрес:</span><span class="font-bold text-mob-14 leading-160 sm:text-fs-18">Долгопрудный, <br> улица Уличных улиц, дом 15</span></div>
@@ -58,7 +58,22 @@
 <iframe class="lozad w-full h-[108.333vw] sm:h-fs-500" data-src="https://yandex.com/map-widget/v1/?ll=-87.621499%2C41.875177&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoyMjQwNTc0MzIwEkFVbml0ZWQgU3RhdGVzIG9mIEFtZXJpY2EsIFN0YXRlIG9mIElsbGlub2lzLCBDb29rIENvdW50eSwgQ2hpY2FnbyIKDV4_r8IVv4AnQg%2C%2C&z=15.29" style="position:relative;"></iframe>
 </div>
   </section>
-</main>
+</main><form method="POST" name="popup_form" action="forms/send_popup_contacts.php" class="popup pointer-events-auto mfp-hide overflow-hidden sm:max-w-[36vw] w-auto mx-auto max-w-[95vw] bg-white text-black pt-mob-40 pb-mob-30 px-mob-20 sm:pt-fs-60 sm:pb-fs-40 sm:px-fs-40" id="popup">
+<p class="text-center font-bold text-mob-26 uppercase mb-mob-30 sm:text-fs-28 sm:mb-fs-40">консультация специалиста по решению ваших задач</p>
+<div class="flex flex-col gap-y-mob-25 sm:gap-y-fs-25">
+  <div class="flex flex-col gap-y-mob-25 sm:gap-y-fs-25"><input type="text" hidden class="popup_hidden_input" name="popup_hidden">
+    <div>
+      <div class="text-mob-12 flex flex-row items-center justify-between mb-mob-16 sm:text-fs-16 sm:mb-fs-20">
+        <label for="popup_name">Введите имя:</label><span class="input-error text-rs-error --hidden">Ошибка ввода</span>
+      </div><input class="text-black sm:text-fs-16 text-mob-16 w-full border-mob-1 name sm:border-fs-1 border-black py-mob-25 px-mob-23 sm:py-fs-18 sm:px-fs-20" name="popup_name" id="popup_name" type="text" placeholder="Ваше имя">
+    </div>
+    <div>
+      <div class="text-mob-12 flex flex-row items-center justify-between mb-mob-16 sm:text-fs-16 sm:mb-fs-20">
+        <label for="popup_tel">Номер телефона:</label><span class="input-error text-rs-error --hidden">Ошибка ввода</span>
+      </div><input class="text-black sm:text-fs-16 text-mob-16 w-full tel border-mob-1 sm:border-fs-1 border-black py-mob-25 px-mob-23 sm:py-fs-18 sm:px-fs-20" name="popup_tel" id="popup_tel" pattern="\+7\s\d\d\d\s\d\d\d\s\d\d\s\d\d" type="tel" placeholder="+7 XXX XXX XX XX" maxlength="16" minlength="16" required>
+    </div>
+  </div><button class="button" name="popup_submit" type="submit">Отправить</button>
+</div></form>
 <footer class="footer mt-mob-36 sm:mt-fs-80">
   <div class="footer__top flex flex-col items-center border-t border-rs-gray font-bold py-mob-40 px-mob-20 sm:flex-row sm:px-fs-40 sm:py-0">
     <nav class="nav">
@@ -87,7 +102,7 @@
           <div class="flex flex-col items-center gap-x-fs-14 sm:flex-row sm:mr-fs-55">
             <div class="flex flex-col items-center gap-y-mob-20 mb-mob-14 sm:flex-row sm:ml-fs-55 sm:gap-x-fs-20 sm:mb-0"><img class="lozad w-mob-20 h-mob-20 sm:w-fs-20 sm:h-fs-20" src="/assets/img/phone.svg" data-src="/assets/img/phone.svg" alt="Телефон"><a class="text-mob-14 sm:text-fs-18" href="tel:HREF_PHONE_NUMBER">+7 (499) 000-00-00</a></div>
             <div class="flex flex-row items-center gap-x-mob-14 sm:gap-x-fs-14"><a href="HREF_WHATSAPP"><img class="lozad w-mob-20 h-mob-20 sm:w-fs-20 sm:h-fs-20" src="/assets/img/wa.svg" data-src="/assets/img/wa.svg" alt="WhatsApp"></a><a href="HREF_TELEGRAM"><img class="lozad w-mob-20 h-mob-16 sm:w-fs-20 sm:h-fs-16" src="/assets/img/tg.svg" data-src="/assets/img/tg.svg" alt="Telegram"></a></div>
-          </div><a class="button --small text-center inline-block" href="#callback">перезвоните мне</a>
+          </div><a class="show-popup button --small text-center inline-block" href="#popup">перезвоните мне</a>
         </div>
       </div>
     </div>
@@ -103,6 +118,7 @@
     </div><img class="w-[95vw] sm:w-full sm:px-fs-40 sm:mb-fs-60 sm:mt-fs-70 mt-mob-40 mb-mob-36 mx-auto" src="/assets/img/riverstories.svg" data-src="/assets/img/riverstories.svg" alt="RiverStories">
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="assets/js/jquery.mask.min.js"></script>
   <script src="assets/js/libs.min.js"> </script>
   <script src="assets/js/main.js"></script>
 </footer></body>

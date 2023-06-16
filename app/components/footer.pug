@@ -1,3 +1,20 @@
+<form method="POST" name="popup_form" action="forms/send_popup_contacts.php" class="popup pointer-events-auto mfp-hide overflow-hidden sm:max-w-[36vw] w-auto mx-auto max-w-[95vw] bg-white text-black pt-mob-40 pb-mob-30 px-mob-20 sm:pt-fs-60 sm:pb-fs-40 sm:px-fs-40" id="popup">
+  p.text-center.font-bold.text-mob-26.uppercase.mb-mob-30(class="sm:text-fs-28 sm:mb-fs-40") консультация специалиста по решению ваших задач
+  div.flex.flex-col.gap-y-mob-25(class="sm:gap-y-fs-25")
+    div.flex.flex-col.gap-y-mob-25(class="sm:gap-y-fs-25")
+        <input type="text" hidden class="popup_hidden_input" name="popup_hidden">
+        div
+            div.text-mob-12.flex.flex-row.items-center.justify-between.mb-mob-16(class="sm:text-fs-16 sm:mb-fs-20")
+                label(for="popup_name") Введите имя:
+                span.input-error.text-rs-error.--hidden Ошибка ввода
+            <input class="text-black sm:text-fs-16 text-mob-16 w-full border-mob-1 name sm:border-fs-1 border-black py-mob-25 px-mob-23 sm:py-fs-18 sm:px-fs-20" name="popup_name" id="popup_name" type="text" placeholder="Ваше имя">
+        div
+            div.text-mob-12.flex.flex-row.items-center.justify-between.mb-mob-16(class="sm:text-fs-16 sm:mb-fs-20")
+                label(for="popup_tel") Номер телефона:
+                span.input-error.text-rs-error.--hidden Ошибка ввода
+            <input class="text-black sm:text-fs-16 text-mob-16 w-full tel border-mob-1 sm:border-fs-1 border-black py-mob-25 px-mob-23 sm:py-fs-18 sm:px-fs-20" name="popup_tel" id="popup_tel" pattern="\+7\s\d\d\d\s\d\d\d\s\d\d\s\d\d" type="tel" placeholder="+7 XXX XXX XX XX" maxlength="16" minlength="16" required>
+    <button class="button" name="popup_submit" type="submit">Отправить</button>
+</form>
 footer.footer.mt-mob-36(class="sm:mt-fs-80")
     .footer__top.flex.flex-col.items-center.border-t.border-rs-gray.font-bold.py-mob-40.px-mob-20(class="sm:flex-row sm:px-fs-40 sm:py-0")
         nav.nav
@@ -36,7 +53,7 @@ footer.footer.mt-mob-36(class="sm:mt-fs-80")
                                 img.lozad.w-mob-20.h-mob-20(class="sm:w-fs-20 sm:h-fs-20" src="/assets/img/wa.svg" data-src="/assets/img/wa.svg" alt="WhatsApp")
                             a(href="HREF_TELEGRAM")
                                 img.lozad.w-mob-20.h-mob-16(class="sm:w-fs-20 sm:h-fs-16" src="/assets/img/tg.svg" data-src="/assets/img/tg.svg" alt="Telegram")
-                    a(href="#callback").button.--small.text-center.inline-block перезвоните мне
+                    a(href="#popup").show-popup.button.--small.text-center.inline-block перезвоните мне
     .footer__bottom.py-mob-30.border-t.border-t-rs-gray(class="sm:py-fs-30")
         .footer__bottom-inner.px-mob-20.flex.flex-col.gap-y-mob-30(class="sm:px-fs-40 sm:gap-y-0 sm:justify-between")
             div.text-rs-gray.text-mob-12.leading-140.text-center(class="sm:text-fs-14 sm:text-left")
@@ -51,6 +68,7 @@ footer.footer.mt-mob-36(class="sm:mt-fs-80")
                     a.underline(href="LINK_DEV_2") VanGogh
         img(class="w-[95vw] sm:w-full sm:px-fs-40 sm:mb-fs-60 sm:mt-fs-70 mt-mob-40 mb-mob-36 mx-auto" src="/assets/img/riverstories.svg" data-src="/assets/img/riverstories.svg" alt="RiverStories")
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js")
+    script(src="assets/js/jquery.mask.min.js")
     script(src="assets/js/libs.min.js")  
     script(src="assets/js/main.js")
 

@@ -1,6 +1,12 @@
 @import "global";
 
 @layer utilities {
+    input[type="tel"], input[type="text"]{
+        @apply duration-200 transition-colors hover:border-rs-accent focus:border-rs-accent outline-none
+    }
+    input[type="tel"].--error, input[type="text"].--error{
+        @apply border-rs-error
+    }
     .noscroll{
         @apply overflow-hidden;
     }
@@ -105,6 +111,10 @@
     ul.card__descr li:not(:last-child){
         @apply mb-mob-16 sm:mb-fs-12
     }
+
+    .--hidden{
+        @apply hidden
+    }
 }
 
 @layer components{
@@ -175,6 +185,7 @@
     .services__item-text.wysiwyg p:not(:last-child){
         @apply sm:mb-fs-30
     }
+    
 
     .about__item:not(:last-child){
         @apply border-b border-b-rs-gray sm:border-b-0 sm:border-r sm:border-r-rs-gray
@@ -211,8 +222,63 @@
     .info__partners div:not(:last-child){
         @apply border-r-black border-r-mob-1 sm:border-r-fs-1
     }
+    ul.tags{
+        @apply flex flex-row flex-wrap gap-mob-4 sm:gap-fs-20 mt-mob-40 mb-mob-60 sm:my-fs-35
+    }
+    ul.tags li{
+        @apply py-mob-10 px-mob-20 bg-[#1D1D1D] w-fit text-mob-12 sm:text-fs-14 sm:py-fs-10 sm:px-fs-20
+    }
+
+    .services__item.--page ul li{
+        @apply mark text-mob-12 sm:text-fs-14
+    }
+    .services__item.--page ul li:not(:last-child){
+        @apply mb-mob-16 sm:mb-fs-10
+    }
+
+    
 }
 
+.mfp-close{
+    background-color: rgb(255,208,39) !important;
+    opacity: 1 !important;
+    width: 5.556vw;
+    height: 5.556vw;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-55%) translateY(25%);
+    font-size: 4.9vw !important;
+}
+@media (min-width: 660px) {
+    .mfp-close{
+        position: absolute !important;
+        top: 0 !important;
+        bottom: 0 !important;
+        left: 66% !important;
+        transform: translateX(-25%) translateY(25%);
+        width: 1.823vw !important;
+        height: 1.823vw !important;
+        font-size: 1.5vw !important;
+    }
+}
+.mfp-close:hover{
+    background-color: rgb(255,184,0);
+}
+
+.services .services__top > div{
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 70%), url('/assets/img/bg_services_mobile.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: top;
+}
+@media (min-width: 660px) {
+    .services .services__top > div{
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%), linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0,0,0,0)), url('/assets/img/bg_services.webp');
+        background-size: cover;
+        background-position-y: unset;
+    }
+}
 
 .front .front__top > div{
     background-image: linear-gradient(0deg, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 70%), url('/assets/img/front_mob.webp');
@@ -227,6 +293,7 @@
         background-position-y: unset;
     }
 }
+
 
 // *{
 //     border: red 1px solid;

@@ -138,13 +138,35 @@ $('.cases__items').slick({
         }
     });
 
+    $('.show-popup').magnificPopup({
+        type:'inline',
+        midClick: true
+    });
+    $(".tel").mask("+7 999 999 99 99");
 
-// $('.slider-button-area-prev').on('click', function(){
-//     $('.slider').slick('slickPrev');
-// });
-// $('.slider-button-area-next').on('click', function(){
-//     $('.slider').slick('slickNext');
-// });
+    $("button[name='popup_submit']").on('click', function(){
+        let tel_value = document.forms["popup_form"]["popup_tel"].value;
+        if (tel_value.length < 16) {
+            $("form[name='popup_form'] .tel").addClass('--error');
+            $("form[name='popup_form'] .tel").parent().find('.input-error').removeClass('--hidden');
+            return false;
+        } else{
+            $("form[name='popup_form'] .tel").removeClass('--error');
+            $("form[name='popup_form'] .tel").parent().find('.input-error').addClass('--hidden');
+        }
+    });
 
+
+    $("button[name='page_cta_submit']").on('click', function(){
+        let tel_value = document.forms["page_cta"]["page_cta_tel"].value;
+        if (tel_value.length < 16) {
+            $("form[name='popup_form'] .tel").addClass('--error');
+            $("form[name='popup_form'] .tel").parent().find('.input-error').removeClass('--hidden');
+            return false;
+        } else{
+            $("form[name='popup_form'] .tel").removeClass('--error');
+            $("form[name='popup_form'] .tel").parent().find('.input-error').addClass('--hidden');
+        }
+    });
 });
 

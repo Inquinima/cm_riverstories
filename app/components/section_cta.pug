@@ -4,8 +4,10 @@ section.section.cta.bg-bottom.bg-no-repeat.bg-contain.pb-mob-157(class="bg-[url(
             p.leading-140.text-mob-12.mb-mob-21(class="sm:text-fs-16 sm:mb-0") Ваши персональные эксперты в сфере лодок и катеров
         div(class="sm:col-span-2")
             h2.leading-140.text-mob-26.font-bold.uppercase.mb-mob-36(class="sm:text-fs-40 sm:mb-fs-40") Получите консультацию специалиста по решению ваших задач 
-            form.grid.grid-cols-1.gap-y-mob-14(action="FORM_ACTION" method="POST" name="FORM_NAME" class="sm:grid-cols-2 sm:gap-x-fs-30 sm:gap-y-0 items-end")
+            form.grid.grid-cols-1.gap-y-mob-14(action="FORM_ACTION" method="POST" name="page_cta" class="sm:grid-cols-2 sm:gap-x-fs-30 sm:gap-y-0 items-end")
                 div
-                    label.block.leading-160.text-mob-12.mb-mob-16(class="sm:text-fs-16 sm:mb-fs-20") Номер телефона:
-                    input.block.w-full.leading-200.font-bold.text-mob-16.border-mob-1.py-mob-18.px-mob-20.text-white.bg-transparent(class="placeholder:text-white sm:text-fs-16 sm:border-fs-1 sm:py-fs-25 sm:px-fs-23" type="tel" name="INPUT_NAME" placeholder="+7 XXX XXX XX XX")
-                button.button.w-full.--bigger(type="submit" name="SUBMIT_NAME") ОТПРАВИТЬ
+                    div.text-mob-12.flex.flex-row.items-center.justify-between.mb-mob-16(class="sm:text-fs-16 sm:mb-fs-20")
+                        label(for="page_cta_tel") Номер телефона:
+                        span.input-error.text-rs-error.--hidden Ошибка ввода
+                    input#page_cta_tel.block.w-full.leading-200.font-bold.text-mob-16.border-mob-1.py-mob-18.px-mob-20.text-white.bg-transparent(class="placeholder:text-white sm:text-fs-16 sm:border-fs-1 sm:py-fs-25 sm:px-fs-23 tel" name="page_cta_tel" pattern="\+7\s\d\d\d\s\d\d\d\s\d\d\s\d\d" type="tel" placeholder="+7 XXX XXX XX XX" maxlength="16" minlength="16" required)
+                button.button.w-full.--bigger(type="submit" name="page_cta_submit") ОТПРАВИТЬ
