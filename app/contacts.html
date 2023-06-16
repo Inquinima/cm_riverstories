@@ -13,7 +13,7 @@
   <div class="header__top border-b border-rs-gray">
     <div class="header__top-inner pl-mob-20 flex flex-row justify-between sm:px-fs-40"><a class="block logo py-mob-15 sm:border-r sm:border-rs-gray pr-fs-15 sm:pl-fs-15 sm:py-fs-23 sm:pr-fs-33" href="/"><img class="lozad w-mob-171 h-mob-28 sm:h-fs-36 sm:w-fs-219" src="/assets/img/logo.svg" data-src="/assets/img/logo.svg" alt="Логотип RiverStories"></a>
       <div class="sm:hidden flex flex-row"><a class="flex items-center justify-center border-l border-rs-gray w-mob-60 h-mob-60" href="tel:HREF_PHONE_NUMBER"><img class="lozad w-mob-20 h-mob-20" src="/assets/img/phone.svg" data-src="/assets/img/phone.svg" alt="Телефон"></a>
-        <button class="flex items-center justify-center border-l border-rs-gray w-mob-60 h-mob-60 transition-colors hover:bg-rs-accent-active"><img class="lozad w-mob-20 h-mob-15" src="/assets/img/burger.svg" data-src="/assets/img/burger.svg" alt="Меню"></button>
+        <button class="show-menu flex items-center justify-center border-l border-rs-gray w-mob-60 h-mob-60 transition-colors hover:bg-rs-accent-active"><img class="lozad w-mob-20 h-mob-15" src="/assets/img/burger.svg" data-src="/assets/img/burger.svg" alt="Меню"></button>
       </div>
       <div class="hidden flex-row items-center sm:flex">
         <div class="flex flex-row items-center gap-x-fs-20"><img class="lozad w-fs-24 h-fs-24" src="/assets/img/pin.svg" data-src="/assets/img/pin.svg" alt="Указатель">
@@ -37,7 +37,7 @@
         <li><a href="#">Контакты</a></li>
       </ul>
     </nav>
-    <button class="flex items-center justify-center border-l border-r border-rs-gray w-fs-66 h-fs-66 transition-colors ml-auto hover:bg-rs-accent-active"><img class="w-fs-20 h-fs-15" src="/assets/img/burger.svg" data-src="/assets/img/burger.svg" alt="Меню"></button>
+    <button class="show-menu flex items-center justify-center border-l border-r border-rs-gray w-fs-66 h-fs-66 transition-colors ml-auto hover:bg-rs-accent-active"><img class="w-fs-20 h-fs-15" src="/assets/img/burger.svg" data-src="/assets/img/burger.svg" alt="Меню"></button>
   </div>
 </header>
 <div class="breadcrumbs text-mob-12 inner sm:text-fs-14"><a class="crumb" href="#HREF_CRUMB">Главная</a><a class="crumb" href="#HREF_CRUMB">Каталог</a><span class="crumb">Admiral Regale 42 RPH</span></div>
@@ -74,6 +74,34 @@
     </div>
   </div><button class="button" name="popup_submit" type="submit">Отправить</button>
 </div></form>
+<div class="overlay overflow-y-scroll overflow-x-hidden sm:overflow-auto">
+  <div class="overlay-popup menu overflow-visible pointer-events-auto shadow-xl right-0 left-auto text-black bg-white bg-no-repeat bg-clip-content bg-[url('/assets/img/bg_menu_riverstories.webp')] min-h-full h-fit">
+    <div class="flex flex-col px-mob-20 pb-mob-40 sm:px-fs-40 sm:pb-fs-40">
+      <div class="flex flex-row items-center justify-end gap-mob-30 py-mob-35 sm:gap-x-fs-20 sm:py-fs-35"><span class="text-mob-14 sm:text-fs-14">Меню</span>
+        <button class="menu-close w-mob-27 h-mob-27 sm:w-fs-27 sm:h-fs-27" type="button"><img class="lozad w-mob-27 h-mob-27 sm:w-fs-27 sm:h-fs-27" src="assets/img/cross_black.svg" data-src="assets/img/cross_black.svg" alt="Закрыть"></button>
+      </div>
+      <nav class="nav flex flex-col mb-mob-40 sm:mb-fs-60"><span class="block py-mob-15 text-mob-14 sm:text-fs-14 sm:py-fs-15 sm:border-b-fs-1 border-b-mob-1 border-b-black">Навигация</span>
+        <ul>
+          <li><a href="/">Тюнинг</a></li>
+          <li><a href="/">ТО</a></li>
+          <li><a href="/">Тиковое покрытие</a></li>
+          <li><a href="/">Каталог </a></li>
+          <li><a href="/">Продажа </a></li>
+          <li><a href="/">О компании</a></li>
+          <li><a href="/">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="contacts flex flex-col"><span class="block py-mob-15 text-mob-14 sm:text-fs-14 sm:py-fs-15 sm:border-b-fs-1 border-b-mob-1 border-b-black">Контакты</span>
+        <div class="flex flex-col items-center gap-y-mob-30 mt-mob-15 sm:mt-fs-15 sm:flex-row sm:gap-y-0">
+          <div class="flex flex-col items-center gap-x-fs-14 sm:flex-row sm:mr-fs-55"><a class="text-mob-12 font-bold mb-mob-15 sm:text-fs-18 sm:mb-0" href="tel:HREF_PHONE_NUMBER">+7 (499) 000-00-00</a>
+            <div class="flex flex-row items-center gap-x-mob-14 sm:gap-x-fs-14"><a href="HREF_WHATSAPP"><img class="lozad w-mob-20 h-mob-20 sm:w-fs-20 sm:h-fs-20" src="/assets/img/wa_black.svg" data-src="/assets/img/wa_black.svg" alt="WhatsApp"></a><a href="HREF_TELEGRAM"><img class="lozad w-mob-20 h-mob-16 sm:w-fs-20 sm:h-fs-16" src="/assets/img/tg_black.svg" data-src="/assets/img/tg_black.svg" alt="Telegram"></a></div>
+          </div>
+        </div>
+        <p class="text-mob-12 leading-160 uppercase font-bold mt-mob-30 sm:text-fs-16 sm:mt-fs-30">Долгопрудный, <br> улица Уличных улиц, дом 15</p><a class="inline-block button show-popup w-fit --small mt-mob-30 mb-mob-60 sm:mt-fs-30 sm:mb-fs-60" href="#popup">Готовы пообщаться?</a>
+      </div>
+    </div>
+  </div>
+</div>
 <footer class="footer mt-mob-36 sm:mt-fs-80">
   <div class="footer__top flex flex-col items-center border-t border-rs-gray font-bold py-mob-40 px-mob-20 sm:flex-row sm:px-fs-40 sm:py-0">
     <nav class="nav">

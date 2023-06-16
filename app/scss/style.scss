@@ -118,6 +118,20 @@
 }
 
 @layer components{
+    .overlay{
+        @apply overflow-hidden fixed w-screen h-screen z-[110] top-0 left-0 bottom-0 right-0 backdrop-blur-md duration-200 opacity-0 invisible;
+    }
+    .overlay.--active{
+        @apply opacity-100 visible
+    }
+    .menu{
+        @apply absolute block z-[150] opacity-0 duration-300 top-0 right-0 bottom-0 bg-white
+    }
+    .menu.--active{
+        @apply opacity-100
+    }
+
+
     .body{
         @apply relative bg-black;
     }
@@ -236,9 +250,29 @@
         @apply mb-mob-16 sm:mb-fs-10
     }
 
-    
+    .overlay-popup.menu ul li a{
+        @apply leading-140 text-mob-16 sm:text-fs-16 uppercase font-bold hover:text-rs-accent duration-200 transition-colors
+    }
+    .overlay-popup.menu nav ul{
+        @apply flex flex-col mt-mob-15 sm:mt-fs-15
+    }
+    .overlay-popup.menu ul li:not(:last-child){
+        @apply mb-mob-20 sm:mb-fs-20
+    }
 }
 
+.overlay-popup.menu{
+    background-position-y: 95%;
+    background-position-x: center;
+    background-size: 90% auto;
+}
+@media (min-width: 660px) {
+    .overlay-popup.menu{
+        background-position-y: 95%;
+        background-position-x: center;
+        background-size: 90% auto;
+    }
+}
 .mfp-close{
     background-color: rgb(255,208,39) !important;
     opacity: 1 !important;

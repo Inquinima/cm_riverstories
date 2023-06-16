@@ -2,57 +2,54 @@ $(()=>{
     const observer = lozad();
     observer.observe();
 
-//     let popupActive = false;
-//     function popupSwitch(){
-//         switch(popupActive){
-//             case true:
-//                 $('.popup').fadeOut();
-//                 $('.overlay').fadeOut();
-//                 $('html').removeClass('noscroll');
-//                 popupActive = !popupActive;
-//                 break;
-//             case false:
-//                 $('.popup').fadeIn();
-//                 $('.overlay').fadeIn();
-//                 $('html').addClass('noscroll');
-//                 popupActive = !popupActive;
-//                 break;
-//             default:
-//         }
-//     }
-//     const regexExclude =  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    let popupActive = false;
+    function popupSwitch(){
+        switch(popupActive){
+            case true:
+                $('.overlay').removeClass('--active');
+                $('.menu').removeClass('--active');
+                $('html').removeClass('noscroll');
+                popupActive = !popupActive;
+                break;
+            case false:
+                $('.overlay').addClass('--active');
+                $('.menu').addClass('--active');
+                $('html').addClass('noscroll');
+                popupActive = !popupActive;
+                break;
+            default:
+        }
+    }
 
-//     $('.show-popup').on('click', function(){
-//         popupSwitch();
-//     });
-//     $('.overlay').on('click', function(){
-//         if(popupActive){
-//             popupSwitch();
-//         }
-//     });
-//     $('.close-popup').on('click', function(){
-//         if(popupActive){
-//             popupSwitch();
-//         }
-//     });
-//     $(window).on('keydown', function(e) {
-//         switch(popupActive){
-//             case true:
-//                 if(e.key == "Escape"){
-//                     popupSwitch();
-//                 }
-//                 break;
-//             case false:
-//                 if(e.key == "ArrowLeft") {
-//                     $('.slider').slick('slickPrev');
-//                 }
-//                 if(e.key == "ArrowRight") {
-//                     $('.slider').slick('slickNext');
-//                 }
-//                 break;
-//             default:
-//         }
-//     });
+    $('.show-menu').on('click', function(){
+        popupSwitch();
+    });
+
+    $('.overlay').on('click', function(){
+        if(popupActive){
+            popupSwitch();
+        }
+    });
+
+    $('.menu li').on('click', function(){
+        if(popupActive){
+            popupSwitch();
+        }
+    });
+    $('.menu li').on('click', function(){
+        if(popupActive){
+            popupSwitch();
+        }
+    });
+    $('.menu-close').on('click', function(){
+        if(popupActive){
+            popupSwitch();
+        }
+    });
+
+    $('.overlay .menu').on('click', function(e) {
+        e.stopPropagation();
+     });
 
 $('.cases__items').slick({
         arrows: false,
